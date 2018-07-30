@@ -565,6 +565,7 @@ header.page-header {
   margin-bottom: 75px;
   color: #fff;
   position: relative;
+  background-image: url(assets/images/_tariff-bg.jpg);
 }
 @media (min-width: 768px) {
   header.page-header:after {

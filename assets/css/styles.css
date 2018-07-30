@@ -4,3 +4,17 @@
 .btn-car-block {
     margin-bottom: 50px;
 }
+#header.page-banner {
+    background-image: url(assets/images/_tariff-bg.jpg);
+}
+#tariffs h2-1 {
+  margin-bottom: 30px !important;
+  color: #000;
+}
+.tariffs-black{
+    color: #000;
+    text-align: center;
+}
+.margin-top{
+    margin-top: 30px;
+}
