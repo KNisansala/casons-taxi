@@ -42,7 +42,11 @@
             <div class="container">
                 <ol class="bread">
                     <li>
+
                         <a href="index.php"><span>Home</span></a>
+
+                        <a href="index.html"><span>Home</span></a>
+
                     </li>
                     <li class="divider"><span>//</span></li>
                     <li>
@@ -136,7 +140,10 @@
                 </div>
             </div>
         </section>		
+
         
+
+
         <section id="download" class="parallax" style="background-image: url(assets/images/_download-bg.jpg);">
             <div class="container">
                 <h4 class="yellow">Get More Benefits</h4>
