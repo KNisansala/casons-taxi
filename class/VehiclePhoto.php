@@ -7,14 +7,14 @@
  */
 
 /**
- * Description of TourPackagePhotosNormal
+ * Description of VehiclePhoto
  *
  * @author HP
  */
-class TourPackagePhotosNormal {
+class VehiclePhoto {
 
     public $id;
-    public $tourpackage;
+    public $vehicle;
     public $image_name;
     public $caption;
     public $queue;
@@ -22,14 +22,14 @@ class TourPackagePhotosNormal {
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`tourpackage`,`image_name`,`caption`,`queue` FROM `tour_photo_normal` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`vehicle`,`image_name`,`caption`,`queue` FROM `tour_photo_normal` WHERE `id`=" . $id;
 
             $db = new Database();
 
             $result = mysql_fetch_array($db->readQuery($query));
 
             $this->id = $result['id'];
-            $this->tourpackage = $result['tourpackage'];
+            $this->vehicle = $result['vehicle'];
             $this->image_name = $result['image_name'];
             $this->caption = $result['caption'];
             $this->queue = $result['queue'];
@@ -40,8 +40,8 @@ class TourPackagePhotosNormal {
 
     public function create() {
 
-        $query = "INSERT INTO `tour_photo_normal` (`tourpackage`,`image_name`,`caption`,`queue`) VALUES  ('"
-                . $this->tourpackage . "','"
+        $query = "INSERT INTO `tour_photo_normal` (`vehicle`,`image_name`,`caption`,`queue`) VALUES  ('"
+                . $this->vehicle . "','"
                 . $this->image_name . "', '"
                 . $this->caption . "', '"
                 . $this->queue . "')";
@@ -76,7 +76,7 @@ class TourPackagePhotosNormal {
     public function update() {
 
         $query = "UPDATE  `tour_photo_normal` SET "
-                . "`tourpackage` ='" . $this->tourpackage . "', "
+                . "`vehicle` ='" . $this->vehicle . "', "
                 . "`image_name` ='" . $this->image_name . "', "
                 . "`caption` ='" . $this->caption . "', "
                 . "`queue` ='" . $this->queue . "' "
@@ -104,7 +104,7 @@ class TourPackagePhotosNormal {
 
     public function getTourPhotosById($tour) {
 
-        $query = "SELECT * FROM `tour_photo_normal` WHERE `tourpackage`= $tour ORDER BY queue ASC";
+        $query = "SELECT * FROM `tour_photo_normal` WHERE `vehicle`= $tour ORDER BY queue ASC";
 
         $db = new Database();
 

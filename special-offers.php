@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-        <title>TaxiPark</title>
+        <title>CasonsTaxi</title>
 
         <link href="assets/css/bootstrap-grid.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
