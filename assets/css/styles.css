@@ -8,8 +8,8 @@
     background-image: url(assets/images/_tariff-bg.jpg);
 }
 #tariffs h2-1 {
-  margin-bottom: 30px !important;
-  color: #000;
+    margin-bottom: 30px !important;
+    color: #000;
 }
 .tariffs-black{
     color: #000;
@@ -17,4 +17,31 @@
 }
 .margin-top{
     margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+
+    .hidden-xs {
+        display: none !important;
+    }
+    nav.navbar ul.navbar-nav a {
+        font-size: 18pt;
+        padding: 12px 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none !important;
+    }
 }
