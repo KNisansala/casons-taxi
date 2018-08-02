@@ -18,18 +18,18 @@
                         <div class="row">
                             <div class="col-md-5">
                                 <ul class="nav navbar-nav">
-                                    <li class="active"><a href="#">Home</a></li>
-                                    <li><a href="#">Vehicles</a></li>
-                                    <li><a href="#">Services</a></li>          
-                                    <li><a href="#">Get taxi</a></li>
+                                    <li class="active"><a href="index.php">Home</a></li>
+                                    <li><a href="vehicles.php">Vehicles</a></li>
+                                    <li><a href="services.php">Services</a></li>          
+                                    <li><a href="get-taxi.php">Get taxi</a></li>
 
                                 </ul>						
                             </div>
                             <div class="col-md-5">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="#">Gallery</a></li>
-                                    <li><a href="#">Special Offers</a></li>
-                                    <li><a href="#">Contacts</a></li>
+                                    <li><a href="gallery.php">Gallery</a></li>
+                                    <li><a href="special-offers.php">Special Offers</a></li>
+                                    <li><a href="contacts.php">Contacts</a></li>
                                 </ul>						
                             </div>						
                         </div>

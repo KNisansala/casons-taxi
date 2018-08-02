@@ -61,7 +61,7 @@
                                                     <li>Good application</li>
                                                     <li>Stable orders</li>
                                                 </ul>-->
-                        <a href="#" class="btn btn-yellow btn-lg btn-white">Read More</a>
+                        <a href="about-us.php" class="btn btn-yellow btn-lg btn-white">Read More</a>
                     </div>
                 </div>
             </div>
