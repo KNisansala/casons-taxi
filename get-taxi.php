@@ -18,6 +18,9 @@
         <link href="assets/css/zoomslider.css" rel="stylesheet">
         <link href="assets/css/style2.css" rel="stylesheet">
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="booking-form/style.css" rel="stylesheet" type="text/css"/>
+<!--        <link href="booking-form/date-time-picker/css/jquery.datetimepicker.css" rel="stylesheet" type="text/css"/>-->
+
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:700,800%7COpen+Sans:400,600,700" rel="stylesheet"> 
@@ -73,27 +76,47 @@
                     <div class="row form-with-labels">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="from" value="" placeholder="From Address..." class="ajaxField required"><span class="fa fa-map-marker"></span>
+                                <input type="text" name="txtName" value="" placeholder="Name" class="ajaxField required"><span class=""></span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="to" value="" placeholder="To..." class="ajaxField"><span class="fa fa-map-marker"></span>
+                                <input type="text" name="txtEmail" value="" placeholder="Email" class="ajaxField"><span class=""></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form-with-labels">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="txtPickup" value="" placeholder="Pickup Location" class="ajaxField required"><span class=""></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="txtDrop" value="" placeholder="Drop Location" class="ajaxField"><span class=""></span>
                             </div>
                         </div>
                     </div>
                     <div class="row form-with-labels">	
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="phone" value="" placeholder="Phone Number" class="ajaxField required"><span class="fa fa-phone"></span>
+                                <input type="text" name="txtDate" id="datepicker" placeholder="Date" value=""><span class="fa fa-calendar"></span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="text" value="" placeholder="Date and Time" class="ajaxField"><span class="fa fa-calendar"></span>
+                                <input type="text" name="txtPassengers" value="" placeholder="No of Passengers" class="ajaxField required"><span class=""></span>
                             </div>
                         </div>
                     </div>
+                    <div class="row form-with-labels">	
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea name="txtMessage" id="" class="ajaxField" placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
                     <input type="submit" value="Get Taxi" class="btn btn-lg btn-black btn-white aligncenter">
                     <input type="hidden" id="type" name="type" value="2" class="ajaxField">
                 </form>
@@ -141,7 +164,7 @@
             </div>
         </section>		
 
-        
+
 
 
         <section id="download" class="parallax" style="background-image: url(assets/images/_download-bg.jpg);">
@@ -203,6 +226,8 @@
         <script src="assets/js/map-style.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTRSHf8sjMCfK9PHPJxjJkwrCIo5asIzE"></script>	
         <script type="text/javascript" src="assets/js/scripts.js"></script>
+        <script src="booking-form/scripts.js" type="text/javascript"></script>
+<!--        <script src="booking-form/date-time-picker/js/jquery.datetimepicker.js" type="text/javascript"></script>-->
 
         <script>
             (function (i, s, o, g, r, a, m) {
@@ -219,6 +244,11 @@
 
             ga('create', 'UA-91006724-1', 'auto');
             ga('send', 'pageview');
+        </script>
+        <script>
+            $(function () {
+                $("#datepicker").datepicker();
+            });
         </script>
 
     </body>
