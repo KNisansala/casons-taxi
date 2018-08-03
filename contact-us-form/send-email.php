@@ -3,7 +3,7 @@
 //----------------------Company Information---------------------
 
 $comany_name = "Casons Taxi";
-$website_name = "www.caconstaxi.com";
+$website_name = "www.casonstaxi.com";
 $comConNumber = "+94 76 8261423";
 $comEmail = "amalidinushika93@gmail.com";
 $from = 'amalidinushika93@gmail.com';
@@ -26,10 +26,10 @@ if ($_SESSION['CAPTCHACODE'] != $_POST['captchacode']) {
 
 $full_lname = $_POST['name'];
 $visitor_email = $_POST['email'];
-$pickup = $_POST['pickup'];
-$drop = $_POST['drop'];
+$phone = $_POST['phone'];
+$subject = $_POST['subject'];
 $message = $_POST['message'];
-//$captchacode = $_POST['captchacode'];
+$captchacode = $_POST['captchacode'];
 
 
 $subject = 'New Website Enquiry';
