@@ -2901,8 +2901,8 @@ form.form {
 }
 @media (min-width: 991px) {
   form.form-sm {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 form h3 {
@@ -2943,7 +2943,7 @@ form input[type="text"]:focus {
   }
 }
 form textarea {
-  height: 140px;
+  height: 100px;
 }
 form .btn {
   margin: 15px 0 10px;
