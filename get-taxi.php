@@ -19,7 +19,8 @@
         <link href="assets/css/style2.css" rel="stylesheet">
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
         <link href="booking-form/style.css" rel="stylesheet" type="text/css"/>
-<!--        <link href="booking-form/date-time-picker/css/jquery.datetimepicker.css" rel="stylesheet" type="text/css"/>-->
+        
+        <!--        <link href="booking-form/date-time-picker/css/jquery.datetimepicker.css" rel="stylesheet" type="text/css"/>-->
 
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
@@ -73,52 +74,87 @@
                         <a href="#" data-value="4" class="type-4">Bus-Minivan</a>
                         <input type="hidden" name="type-value" class="type-value ajaxField" value="1">
                     </div>
-                    <div class="row form-with-labels">
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="txtName" value="" placeholder="Name" class="ajaxField required"><span class=""></span>
+                                <input type="text" name="txtName" id="txtName" value="" placeholder="Name" class="input-validater">
+                                <span id="spanName"></span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="txtEmail" value="" placeholder="Email" class="ajaxField"><span class=""></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row form-with-labels">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" name="txtPickup" value="" placeholder="Pickup Location" class="ajaxField required"><span class=""></span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" name="txtDrop" value="" placeholder="Drop Location" class="ajaxField"><span class=""></span>
+                                <input type="text" name="txtEmail" id="txtEmail" value="" placeholder="Email" class="input-validater">
+                                <span id="spanEmail"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="row form-with-labels">	
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="txtDate" id="datepicker" placeholder="Date" value=""><span class="fa fa-calendar"></span>
+                                <input type="text" name="txtPickup" id="txtPickup" value="" placeholder="Pickup Location" class="input-validater">
+                                <span id="spanPickup"></span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="txtPassengers" value="" placeholder="No of Passengers" class="ajaxField required"><span class=""></span>
+                                <input type="text" name="txtDrop" id="txtDrop" value="" placeholder="Drop Location" class="input-validater">
+                                <span id="spanDrop"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="row form-with-labels">	
+                    <div class="row">	
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="txtDate" id="datepicker" placeholder="Date" value="" class="input-validater">
+                                <span id="spanDate"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="txtPassengers" id="txtPassengers" value="" placeholder="No of Passengers" class="input-validater">
+                                <span id="spanPassengers"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">	
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea name="txtMessage" id="" class="ajaxField" placeholder="Your Message"></textarea>
+                                <textarea name="txtMessage" id="txtMessage" class="input-validater" placeholder="Your Message"></textarea>
+                                <span id="spanMessage"></span>
                             </div>
                         </div>
                     </div>
 
-                    <input type="submit" value="Get Taxi" class="btn btn-lg btn-black btn-white aligncenter">
-                    <input type="hidden" id="type" name="type" value="2" class="ajaxField">
+                    <div class="row">	
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="captchacode" id="captchacode" class="input-validater" placeholder="Security code >> ">
+                                <span id="capspan" ></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 booking-cap">
+                            <div class="form-group">
+                                <span><?php include("./contact-us-form/captchacode-widget.php"); ?></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <input type="submit" value="Get Taxi" id="btnSubmit" class="btn btn-lg btn-black btn-white aligncenter">
+                            <input type="hidden" id="type" name="type" value="2" class="ajaxField">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="div-check" >
+                                <img src="contact-us-form/img/checking.gif" id="checking"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="dismessage" align="center" class="msg-success"></div>
                 </form>
             </div>
         </section>
@@ -126,7 +162,7 @@
         <section id="tariffs">
             <div class="container">
                 <h4 class="yellow">See Our</h4>
-                <h2 class="h1">Tariffs</h2>
+                <h1 class="tariffs-black">Tariffs</h1>
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="item matchHeight">

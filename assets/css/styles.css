@@ -24,6 +24,9 @@
 .input-margin{
     margin-top: 15px;
 }
+.booking-cap{
+    margin-top: -14px;
+}
 
 @media (max-width: 767px) {
 
