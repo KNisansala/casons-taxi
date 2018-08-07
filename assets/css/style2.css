@@ -1668,7 +1668,7 @@ nav.navbar.affix {
   -moz-background-clip: padding;
   border-radius: 8px;
   background-clip: padding-box;
-  max-width: 570px;
+  max-width: 620px;
   margin: 0 auto;
   padding: 45px 30px 30px;
 }

@@ -28,8 +28,10 @@ $full_lname = $_POST['name'];
 $visitor_email = $_POST['email'];
 $pickup = $_POST['pickup'];
 $drop = $_POST['drop'];
+$date = $_POST['date'];
+$passengers = $_POST['passengers'];
 $message = $_POST['message'];
-//$captchacode = $_POST['captchacode'];
+$captchacode = $_POST['captchacode'];
 
 
 $subject = 'New Website Enquiry';
@@ -39,7 +41,7 @@ date_default_timezone_set('Asia/Colombo');
 
 $todayis = date("l, F j, Y, g:i a");
 
-$site_link = "http://" . $_SERVER['HTTP_HOST'].'/casons-taxi';
+$site_link = "http://" . $_SERVER['HTTP_HOST'];
 
 
 include("mail-template.php");

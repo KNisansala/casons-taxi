@@ -26,10 +26,9 @@ jQuery(document).ready(function () {
         validateEmpty("txtPassengers", "spanPassengers");
     });
 
-
-//    jQuery("#captchacode").blur(function () {
-//        validateEmpty("captchacode", "capspan");
-//    });
+    jQuery("#captchacode").blur(function () {
+        validateEmpty("captchacode", "capspan");
+    });
 
     jQuery("#btnSubmit").bind('click', function () {   
         if (!validate()) {
@@ -41,7 +40,7 @@ jQuery(document).ready(function () {
     });
 
     jQuery('.input-validater').keypress(function (e) {
-        if (e.keyCode == 13) {
+        if (e.keyCode === 13) {
 
             if (!validate()) {
                 return;
@@ -87,7 +86,7 @@ function sendForm() {
         dataType: "json",
         type: "POST",
         data: {
-            full_lname: jQuery('#txtName').val(),
+            name: jQuery('#txtName').val(),
             email: jQuery('#txtEmail').val(),
             pickup: jQuery('#txtPickup').val(),            
             drop: jQuery('#txtDrop').val(),
@@ -101,14 +100,14 @@ function sendForm() {
             var status = html.status;
             var msg = html.msg;
 
-            if (status == "incorrect") {
+            if (status === "incorrect") {
 
                 jQuery("#capspan").addClass("notvalidated");
                 jQuery("#capspan").html(msg);
                 jQuery("#capspan").show();
                 jQuery("#checking").fadeOut(2000);
 
-            } else if (status == "correct") {
+            } else if (status === "correct") {
                 jQuery("#checking").hide();
                 jQuery("#dismessage").html(msg).delay(1000).show(1000);
 
@@ -131,7 +130,7 @@ function sendForm() {
 function validateEmpty(field, validatorspan)
 {
 
-    if (jQuery('#' + field).val().length != 0)
+    if (jQuery('#' + field).val().length !== 0)
     {
         jQuery('#' + validatorspan).addClass("validated");
         jQuery('#' + validatorspan).removeClass("notvalidated");
