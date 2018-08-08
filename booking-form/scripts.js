@@ -11,11 +11,11 @@ jQuery(document).ready(function () {
     });
     
         jQuery("#txtPickup").blur(function () {
-        ValidateEmail("txtPickup", "spanPickup");
+        validateEmpty("txtPickup", "spanPickup");
     });
     
         jQuery("#txtDrop").blur(function () {
-        ValidateEmail("txtDrop", "spanDrop");
+        validateEmpty("txtDrop", "spanDrop");
     });
     
     jQuery("#datepicker").blur(function () {
@@ -40,7 +40,7 @@ jQuery(document).ready(function () {
     });
 
     jQuery('.input-validater').keypress(function (e) {
-        if (e.keyCode === 13) {
+        if (e.keyCode == 13) {
 
             if (!validate()) {
                 return;
@@ -100,14 +100,14 @@ function sendForm() {
             var status = html.status;
             var msg = html.msg;
 
-            if (status === "incorrect") {
+            if (status == "incorrect") {
 
                 jQuery("#capspan").addClass("notvalidated");
                 jQuery("#capspan").html(msg);
                 jQuery("#capspan").show();
                 jQuery("#checking").fadeOut(2000);
 
-            } else if (status === "correct") {
+            } else if (status == "correct") {
                 jQuery("#checking").hide();
                 jQuery("#dismessage").html(msg).delay(1000).show(1000);
 

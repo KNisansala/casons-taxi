@@ -19,7 +19,7 @@
         <link href="assets/css/style2.css" rel="stylesheet">
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
         <link href="booking-form/style.css" rel="stylesheet" type="text/css"/>
-        
+
         <!--        <link href="booking-form/date-time-picker/css/jquery.datetimepicker.css" rel="stylesheet" type="text/css"/>-->
 
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
@@ -147,10 +147,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="form-group">
-                            <div class="div-check" >
-                                <img src="contact-us-form/img/checking.gif" id="checking"/>
-                            </div>
+                        <div class="div-check" >
+                            <img src="contact-us-form/img/checking.gif" id="checking"/>
                         </div>
                     </div>
 
