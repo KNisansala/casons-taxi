@@ -3,7 +3,7 @@
 //----------------------Company Information---------------------
 
 $comany_name = "Casons Taxi";
-$website_name = "www.caconstaxi.com";
+$website_name = "www.casonstaxi.com";
 $comConNumber = "+94 76 8261423";
 $comEmail = "amalidinushika93@gmail.com";
 $from = 'amalidinushika93@gmail.com';
