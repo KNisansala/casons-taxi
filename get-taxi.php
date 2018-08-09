@@ -1,3 +1,26 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$pickup = '';
+$drop = '';
+$date = '';
+$passengers = '';
+
+if(isset($_GET['txtPickup'])){
+    $pickup = $_GET['txtPickup'];
+}
+if(isset($_GET['txtDrop'])){
+    $drop = $_GET['txtDrop'];
+}
+if(isset($_GET['txtDate'])){
+    $date = $_GET['txtDate'];
+}
+if(isset($_GET['txtPassengers'])){
+    $passengers = $_GET['txtPassengers'];
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -46,11 +69,7 @@
             <div class="container">
                 <ol class="bread">
                     <li>
-
-                        <a href="index.php"><span>Home</span></a>
-
-                        <a href="index.html"><span>Home</span></a>
-
+                        <a href="./"><span>Home</span></a>
                     </li>
                     <li class="divider"><span>//</span></li>
                     <li>
@@ -91,13 +110,13 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="txtPickup" id="txtPickup" value="" placeholder="Pickup Location" class="input-validater">
+                                <input type="text" name="txtPickup" id="txtPickup" value="<?php echo $pickup; ?>" placeholder="Pickup Location" class="input-validater">
                                 <span id="spanPickup"></span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="txtDrop" id="txtDrop" value="" placeholder="Drop Location" class="input-validater">
+                                <input type="text" name="txtDrop" id="txtDrop" value="<?php echo $drop; ?>" placeholder="Drop Location" class="input-validater">
                                 <span id="spanDrop"></span>
                             </div>
                         </div>
@@ -105,13 +124,13 @@
                     <div class="row">	
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="txtDate" id="datepicker" placeholder="Date" value="" class="input-validater">
+                                <input type="text" name="txtDate" id="datepicker" placeholder="Date" value="<?php echo $date; ?>" class="input-validater">
                                 <span id="spanDate"></span>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" name="txtPassengers" id="txtPassengers" value="" placeholder="No of Passengers" class="input-validater">
+                                <input type="text" name="txtPassengers" id="txtPassengers" value="<?php echo $passengers; ?>" placeholder="No of Passengers" class="input-validater">
                                 <span id="spanPassengers"></span>
                             </div>
                         </div>

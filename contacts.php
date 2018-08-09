@@ -43,7 +43,7 @@
             <div class="container">
                 <ol class="bread">
                     <li>
-                        <a href="index.php"><span>Home</span></a>
+                        <a href="./"><span>Home</span></a>
                     </li>
                     <li class="divider"><span>//</span></li>
                     <li>

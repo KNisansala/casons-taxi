@@ -18,7 +18,8 @@
         <link href="assets/css/zoomslider.css" rel="stylesheet">
         <link href="assets/css/style2.css" rel="stylesheet">
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">-->
+        <link href="admin/plugins/jquery-ui/jquery-ui.css" rel="stylesheet" type="text/css"/>
 
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:700,800%7COpen+Sans:400,600,700" rel="stylesheet"> 
 
@@ -285,7 +286,7 @@
         <script src="assets/js/map-style.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTRSHf8sjMCfK9PHPJxjJkwrCIo5asIzE"></script>	
         <script type="text/javascript" src="assets/js/scripts.js"></script>
-
+        <script src="admin/plugins/jquery-ui/jquery-ui.js" type="text/javascript"></script>
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -301,6 +302,12 @@
 
             ga('create', 'UA-91006724-1', 'auto');
             ga('send', 'pageview');
+        </script>
+
+        <script>
+            $(function () {
+                $("#datepicker1").datepicker();
+            });
         </script>
 
     </body>
