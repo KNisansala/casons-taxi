@@ -27,7 +27,25 @@
 .booking-cap{
     margin-top: -14px;
 }
-
+.t-opacity{
+    opacity: 0.4;
+    margin-top: 80px;
+}
+.h2-about{
+    margin: 0px 0 20px;
+}
+.vision{
+    text-align: center;
+}
+.para-about{
+    text-align: center
+}
+.about{
+    margin-top: 50px;
+}
+h4:hover{
+    color: #FFC61A;
+}
 @media (max-width: 767px) {
 
     .hidden-xs {

@@ -57,29 +57,37 @@
             <div class="inner inner-two-col row">
                 <div class="col-lg-12">
                     <div class="blog-post text-page">
-
-                        <div class="">
-                            <img src="assets/images/_homepage-3-2-bg.jpg" class="full-width swiper-slide" alt="">
+                        <div class="col-md-6">
+                            <h2 class="h2-about">ABOUT US</h2>
+                            <p>Bold textmaecenas mauris felis, pharetra ac odio a, interdum ultricies risus. Nunc tempor nunc at odio fermentum ullamcorper. Sed tincidunt ut tortor quis placerat. Curabitur tristique imperdiet mollis. Sed rutrum id tellus et ultricies. Aliquam maximus sit amet justo vitae volutpat. Ut scelerisque diam vitae ante rhoncus vulputate. Curabitur laoreet eleifend tortor. Mauris sit amet facilisis nunc. Quisque id fermentum leo, eget tincidunt augue. Donec viverra sed ante eget condimentum.</p>
+                            <h5>Why Choose Us...</h5>
+                            <p>We are a well reputed and high professional, reliable taxi services and tours operators in Sri Lanka.  Our existing customers have proved it on their TripAdvisor feedbacks.</p>
                         </div>
-
-                        <div class="blog-info">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <a href="post.html"><span class="fa fa-clock-o"></span>January 2, 2017</a>
-                                </div>
-                                <div class="col-lg-6 col-sm-12 col-xs-6 right">
-                                    <ul>
-                                        <li class="icon-fav"><a href="#"><span class="fa fa-heart"></span>16</a></li>
-                                        <li class="icon-comments"><a href="#"><span class="fa fa-commenting"></span>14</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>	
-
-                        <p><strong>Bold text</strong> maecenas mauris felis, pharetra ac odio a, interdum ultricies risus. Nunc tempor nunc at odio fermentum ullamcorper. Sed tincidunt ut tortor quis placerat. Curabitur <a href="#">link style</a> tristique imperdiet mollis. Sed rutrum id tellus et ultricies. Aliquam maximus sit amet justo vitae volutpat. Ut scelerisque diam vitae ante rhoncus vulputate. Curabitur laoreet eleifend tortor. Mauris sit amet facilisis nunc. Quisque id fermentum leo, eget tincidunt augue. Donec viverra sed ante eget condimentum.</p>
-
+                        <div class="col-md-6 t-opacity">
+                            <img src="assets/images/taxi_PNG16.png" alt=""/>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="container about">
+            <div class="inner inner-two-col row">
+                <div class="col-lg-12">
+                        <div class="col-md-6">
+                            <div class="vision">
+                                <img src="assets/images/vision1.png" alt=""/>
+                            </div>
+                            <h4 class="vision">VISION</h4>
+                            <p class="para-about">To be the most preferred and excellent taxi service providers & tour operators in Sri Lanka.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="vision">
+                                <img src="assets/images/mission1.png" alt=""/>
+                            </div>
+                            <h4 class="vision">MISSION</h4>
+                            <p class="para-about">To be the best taxi services providers and tours operators in Sri Lanka, by offering high quality professional services, maximum customer satisfaction and very comfortable services. </div> 
+                    </div>
             </div>
         </div>
 
