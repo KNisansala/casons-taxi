@@ -9,7 +9,7 @@
                         <span class="icon-bar middle-bar"></span>
                         <span class="icon-bar bottom-bar"></span>
                     </button>
-                    <a class="logo" href="index.php"><img src="assets/images/logo-inner.png" alt="TaxiPark"></a>
+                    <a class="logo" href="./"><img src="assets/images/logo-inner.png" alt="TaxiPark"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <button type="button" class="navbar-toggle collapsed">

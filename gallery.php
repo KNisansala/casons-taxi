@@ -43,7 +43,7 @@
             <div class="container">
                 <ol class="bread">
                     <li>
-                        <a href="index.php"><span>Home</span></a>
+                        <a href="./"><span>Home</span></a>
                     </li>
                     <li class="divider"><span>//</span></li>
                     <li>
@@ -65,13 +65,6 @@
                                     <div class="col-lg-12">
                                         <h5>How often is a taxi used</h5>
                                     </div>
-                                    <div class="col-lg-12">
-                                        <ul>
-                                            <li><span class="fa fa-clock-o"></span>January 2, 2017</li>
-                                            <li class="icon-fav"><a href="#"><span class=" fa fa-heart"></span>198</a></li>
-                                            <li class="icon-comments"><a href="#"><span class=" fa fa-commenting"></span>29</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -83,13 +76,6 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <h5>Taxi for business</h5>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <ul>
-                                            <li><span class="fa fa-clock-o"></span>January 2, 2017</li>
-                                            <li class="icon-fav"><a href="#"><span class=" fa fa-heart"></span>198</a></li>
-                                            <li class="icon-comments"><a href="#"><span class=" fa fa-commenting"></span>29</a></li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -103,13 +89,6 @@
                                     <div class="col-lg-12">
                                         <h5>The best ways to pay a taxi</h5>
                                     </div>
-                                    <div class="col-lg-12">
-                                        <ul>
-                                            <li><span class="fa fa-clock-o"></span>January 2, 2017</li>
-                                            <li class="icon-fav"><a href="#"><span class=" fa fa-heart"></span>198</a></li>
-                                            <li class="icon-comments"><a href="#"><span class=" fa fa-commenting"></span>29</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -121,13 +100,6 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <h5>Taxi for business</h5>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <ul>
-                                            <li><span class="fa fa-clock-o"></span>January 2, 2017</li>
-                                            <li class="icon-fav"><a href="#"><span class=" fa fa-heart"></span>198</a></li>
-                                            <li class="icon-comments"><a href="#"><span class=" fa fa-commenting"></span>29</a></li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -141,13 +113,6 @@
                                     <div class="col-lg-12">
                                         <h5>How often is a taxi used</h5>
                                     </div>
-                                    <div class="col-lg-12">
-                                        <ul>
-                                            <li><span class="fa fa-clock-o"></span>January 2, 2017</li>
-                                            <li class="icon-fav"><a href="#"><span class=" fa fa-heart"></span>198</a></li>
-                                            <li class="icon-comments"><a href="#"><span class=" fa fa-commenting"></span>29</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -159,13 +124,6 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <h5>Taxi for business</h5>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <ul>
-                                            <li><span class="fa fa-clock-o"></span>January 2, 2017</li>
-                                            <li class="icon-fav"><a href="#"><span class=" fa fa-heart"></span>198</a></li>
-                                            <li class="icon-comments"><a href="#"><span class=" fa fa-commenting"></span>29</a></li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
