@@ -19,6 +19,7 @@
         <link href="assets/css/style2.css" rel="stylesheet">
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link href="admin/plugins/fancybox-master/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css"/>
 
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:700,800%7COpen+Sans:400,600,700" rel="stylesheet"> 
 
@@ -57,13 +58,15 @@
         <div class="inner gallery-page gallery-4">
             <div class="container">
                 <div class="row">
+                    
                     <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
                         <div class="item matchHeight">
-                            <a href="assets/images/_gallery-1.jpg" class="swipebox photo"><img src="assets/images/_gallery-1.jpg" class="full-width rounded" alt="Gallery"></a>
+                            <a href="assets/images/_gallery-1.jpg" class="photo" data-fancybox="images">
+                                <img src="assets/images/_gallery-1.jpg" class="full-width rounded" alt="Gallery"></a>
                             <div class="descr">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h5>How often is a taxi used</h5>
+                                        <h5></h5>
                                     </div>
                                 </div>
                             </div>
@@ -71,11 +74,12 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
                         <div class="item matchHeight">
-                            <a href="assets/images/_gallery-2.jpg" class="swipebox photo"><img src="assets/images/_gallery-2.jpg" class="full-width rounded" alt="Gallery"></a>
+                            <a href="assets/images/_gallery-2.jpg" class="photo" data-fancybox="images">
+                                <img src="assets/images/_gallery-2.jpg" class="full-width rounded" alt="Gallery"></a>
                             <div class="descr">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h5>Taxi for business</h5>
+                                        <h5></h5>
                                     </div>
                                 </div>
                             </div>
@@ -83,11 +87,12 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
                         <div class="item matchHeight">
-                            <a href="assets/images/_gallery-3.jpg" class="swipebox photo"><img src="assets/images/_gallery-3.jpg" class="full-width rounded" alt="Gallery"></a>
+                            <a href="assets/images/_gallery-3.jpg" class="photo" data-fancybox="images">
+                                <img src="assets/images/_gallery-3.jpg" class="full-width rounded" alt="Gallery"></a>
                             <div class="descr">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h5>The best ways to pay a taxi</h5>
+                                        <h5></h5>
                                     </div>
                                 </div>
                             </div>
@@ -95,11 +100,12 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
                         <div class="item matchHeight">
-                            <a href="assets/images/_gallery-4.jpg" class="swipebox photo"><img src="assets/images/_gallery-4.jpg" class="full-width rounded" alt="Gallery"></a>
+                            <a href="assets/images/_gallery-4.jpg" class="photo" data-fancybox="images">
+                                <img src="assets/images/_gallery-4.jpg" class="full-width rounded" alt="Gallery"></a>
                             <div class="descr">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h5>Taxi for business</h5>
+                                        <h5></h5>
                                     </div>
                                 </div>
                             </div>
@@ -107,11 +113,12 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
                         <div class="item matchHeight">
-                            <a href="assets/images/_gallery-5.jpg" class="swipebox photo"><img src="assets/images/_gallery-5.jpg" class="full-width rounded" alt="Gallery"></a>
+                            <a href="assets/images/_gallery-5.jpg" class="photo" data-fancybox="images">
+                                <img src="assets/images/_gallery-5.jpg" class="full-width rounded" alt="Gallery"></a>
                             <div class="descr">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h5>How often is a taxi used</h5>
+                                        <h5></h5>
                                     </div>
                                 </div>
                             </div>
@@ -119,17 +126,95 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
                         <div class="item matchHeight">
-                            <a href="assets/images/_gallery-6.jpg" class="swipebox photo"><img src="assets/images/_gallery-6.jpg" class="full-width rounded" alt="Gallery"></a>
+                            <a href="assets/images/_gallery-6.jpg" class="photo" data-fancybox="images">
+                                <img src="assets/images/_gallery-6.jpg" class="full-width rounded" alt="Gallery"></a>
                             <div class="descr">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h5>Taxi for business</h5>
+                                        <h5></h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
+                        <div class="item matchHeight">
+                            <a href="assets/images/_gallery-5.jpg" class="photo" data-fancybox="images">
+                                <img src="assets/images/_gallery-5.jpg" class="full-width rounded" alt="Gallery"></a>
+                            <div class="descr">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
+                        <div class="item matchHeight">
+                            <a href="assets/images/_gallery-6.jpg" class="photo" data-fancybox="images">
+                                <img src="assets/images/_gallery-6.jpg" class="full-width rounded" alt="Gallery"></a>
+                            <div class="descr">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
+                        <div class="item matchHeight">
+                            <a href="assets/images/_gallery-1.jpg" class="photo" data-fancybox="images">
+                                <img src="assets/images/_gallery-1.jpg" class="full-width rounded" alt="Gallery"></a>
+                            <div class="descr">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
+                        <div class="item matchHeight">
+                            <a href="assets/images/_gallery-2.jpg" class="photo" data-fancybox="images">
+                                <img src="assets/images/_gallery-2.jpg" class="full-width rounded" alt="Gallery"></a>
+                            <div class="descr">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
+                        <div class="item matchHeight">
+                            <a href="assets/images/_gallery-3.jpg" class="photo" data-fancybox="images">
+                                <img src="assets/images/_gallery-3.jpg" class="full-width rounded" alt="Gallery"></a>
+                            <div class="descr">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
+                        <div class="item matchHeight">
+                            <a href="assets/images/_gallery-4.jpg" class="photo" data-fancybox="images">
+                                <img src="assets/images/_gallery-4.jpg" class="full-width rounded" alt="Gallery"></a>
+                            <div class="descr">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <h5></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="paging-navigation">
                     <hr>
@@ -144,7 +229,8 @@
                 </div>				
             </div>
         </div>
-
+        
+        
         <!-- Footer -->
         <?php
         include 'footer.php';
@@ -160,6 +246,7 @@
         <script src="assets/js/map-style.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTRSHf8sjMCfK9PHPJxjJkwrCIo5asIzE"></script>	
         <script type="text/javascript" src="assets/js/scripts.js"></script>
+        <script src="admin/plugins/fancybox-master/js/jquery.fancybox.min.js" type="text/javascript"></script>
 
         <script>
             (function (i, s, o, g, r, a, m) {
