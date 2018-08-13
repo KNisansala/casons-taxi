@@ -78,7 +78,7 @@
                                     <li><a href="#" class="social-youtube fa fa-youtube"></a></li>
                                     <li><a href="#" class="social-inst fa fa-instagram"></a></li>
                                 </ul>
-                                <a href="#" class="btn btn-black-bordered btn-lg">Get Taxi Online</a>
+                                <a href="get-taxi.php" class="btn btn-black-bordered btn-lg">Get Taxi Online</a>
                             </div>
                         </div>
                     </div>
@@ -119,7 +119,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-md-4 input-margin">
-                                    <label for="comment" id="form-label">Security Code:</label>
+                                    <label for="comment" id="form-label">Security Code:<span class="red">*</span></label>
                                     <input type="text" name="captchacode" id="captchacode" class="input-validater" placeholder="Security code >> ">
                                     <span id="capspan" ></span>
                                 </div>
