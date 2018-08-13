@@ -953,7 +953,7 @@ nav.navbar #navbar {
 }
 @media (min-width: 1200px) and (min-width: 1200px) {
   nav.navbar #navbar ul.navbar-nav {
-    margin-right: 50px;
+    margin-right: 0px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1199px) {
@@ -1725,7 +1725,7 @@ nav.navbar.affix {
 	6. Tariffs Block
 */
 #tariffs {
-  padding: 16px 0 100px;
+  padding: 16px 0 90px;
   background-color: #F5F5F5;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -2396,12 +2396,11 @@ footer .go-top:hover:before {
 */
 .widget-area {
   background: #F5F5F5;
-  padding: 56px 38px;
+  padding: 34px 38px;
   margin-top: 0px;
   -webkit-border-radius: 3px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 3px;
-  -moz-background-clip: padding;
   border-radius: 3px;
   background-clip: padding-box;
   font-size: 14px;

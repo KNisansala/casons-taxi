@@ -19,7 +19,6 @@
         <link href="assets/css/style2.css" rel="stylesheet">
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:700,800%7COpen+Sans:400,600,700" rel="stylesheet"> 
 
         <script type="text/javascript" src="assets/js/modernizr-2.6.2.min.js"></script>
@@ -55,7 +54,7 @@
 
         <div class="container">
             <div class="inner inner-two-col row">
-                <div class="col-lg-8">
+                <div class="col-lg-9">
                     <div class="blog-post text-page">
 
                         <div class="">
@@ -72,13 +71,7 @@
                         <div class="blog-info">
                             <div class="row">
                                 <div class="col-lg-6 col-sm-12  col-xs-6">
-                                    <a href="post.html"><span class="fa fa-clock-o"></span>January 2, 2017</a>
-                                </div>
-                                <div class="col-lg-6 col-sm-12 col-xs-6 right">
-                                    <ul>
-                                        <li class="icon-fav"><a href="#"><span class="fa fa-heart"></span>16</a></li>
-                                        <li class="icon-comments"><a href="#"><span class="fa fa-commenting"></span>14</a></li>
-                                    </ul>
+                                    <h4>Standart</h4>
                                 </div>
                             </div>
                         </div>	
@@ -90,28 +83,11 @@
                         <p>Suspendisse consectetur libero eu sapien elementum sodales. Fusce eu justo a sapien tincidunt aliquet. Suspendisse imperdiet tristique orci, a dictum nulla commodo eget. Sed pellentesque pellentesque quam, ac iaculis dui rutrum in. Duis et justo at velit efficitur tristique nec at eros.</p>
 
                         <hr>
-
-                        <div class="tags-short">
-                            <strong>Tags:</strong> <a href="#">#gym</a>, <a href="#">#fitness</a>, <a href="#">#nutrition</a>, <a href="#">#protein</a>
-                        </div>
-                        <div class="social-small">
-                            <strong>Share:</strong>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-google-plus"></a>
-                            <a href="#" class="fa fa-pinterest"></a>
-                        </div>
                     </div>
 
                     <div id="comments" class="comments-area">
 
-
-                        <h3 class="comments-title">
-                            4 Comments	</h3>
-
-
-                        <div class="comments-ol">
+<!--                        <div class="comments-ol">
                             <ol class="comment-list">
                                 <li id="comment-2" class="fw-feedback byuser comment-author-admin bypostauthor even thread-even depth-1 comment_item">
                                     <div class="comment-single">
@@ -163,9 +139,9 @@
                                                             <div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://stargymwp.dev/the-best-choice-for-your-muscles-2/?replytocom=5#respond" onclick="return addComment.moveForm( & quot; comment - 5 & quot; , & quot; 5 & quot; , & quot; respond & quot; , & quot; 280 & quot; )" aria-label="Reply to admin">Reply</a></div>
                                                         </div>
                                                     </div>
-                                                </li><!-- #comment-## -->
-                                            </ul><!-- .children -->
-                                        </li><!-- #comment-## -->
+                                                </li> #comment-## 
+                                            </ul> .children 
+                                        </li> #comment-## 
                                         <li id="comment-4" class="comment byuser comment-author-admin bypostauthor odd alt depth-2 comment_item">
                                             <div class="comment-single">
                                                 <div class="comment-author-avatar"><img alt="" src="assets/images/_client-2.jpg" class="avatar avatar-45 photo" width="45" height="45"></div>
@@ -182,11 +158,11 @@
                                                     <div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="http://stargymwp.dev/the-best-choice-for-your-muscles-2/?replytocom=4#respond" onclick="return addComment.moveForm( & quot; comment - 4 & quot; , & quot; 4 & quot; , & quot; respond & quot; , & quot; 280 & quot; )" aria-label="Reply to admin">Reply</a></div>
                                                 </div>
                                             </div>
-                                        </li><!-- #comment-## -->
-                                    </ul><!-- .children -->
-                                </li><!-- #comment-## -->
+                                        </li> #comment-## 
+                                    </ul> .children 
+                                </li> #comment-## 
                             </ol>
-                        </div>
+                        </div>-->
 
                         <h3 class="comments-form-title">Add Comment</h3>
                         <div class="comments-form-wrap">
@@ -222,99 +198,41 @@
 
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="widget-area" role="complementary">
+<aside class="widget">
+                <div class="row">
+                        <div class="item matchHeight vehicles">
+                            <div class="image"><img src="assets/images/_tariff-1.png" alt="Tariff"></div>
+                            <h4>Standart</h4>
+                            <p>Standard sedan for a drive around the city at your service</p>
+                            <div class="price1">$2<span>/km</span></div>
+                            <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                        </div>
+                    <div class="item matchHeight vehicles">
+                        <div class="image"><img src="assets/images/_tariff-1.png" alt="Tariff"></div>
+                            <h4>Business</h4>
+                            <p>Standard sedan for a drive around the city at your service</p>
+                            <div class="price1">$2<span>/km</span></div>
+                            <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                        </div>
+                    <div class="item matchHeight vehicles">
+                            <div class="image"><img src="assets/images/_tariff-1.png" alt="Tariff"></div>
+                            <h4 class="red">Vip</h4>
+                            <p>Standard sedan for a drive around the city at your service</p>
+                            <div class="price1">$2<span>/km</span></div>
+                            <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                        </div>
+                    <div class="item matchHeight vehicles1">
+                            <div class="image"><img src="assets/images/_tariff-1.png" alt="Tariff"></div>
+                            <h4>Bus-minivan</h4>
+                            <p>Standard sedan for a drive around the city at your service</p>
+                            <div class="price1">$2<span>/km</span></div>
+                            <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                        </div>
+                </div>
+</aside>
 
-                        <aside class="widget">
-                            <h4>Categories</h4>
-                            <ul>					
-                                <li class="current-cat"><a href="#"><strong>Taxi Drivers</strong></a>
-                                <li><a href="#">Our Cars</a></li>
-                                <li><a href="#">Business Services</a></li>
-                                <li><a href="#">Popular Routes</a></li>
-                                <li><a href="#">City Traffic</a></li>
-                                <li><a href="#">Terms and Conditions</a></li>
-                            </ul>
-                        </aside>
-
-                        <aside class="widget widget_calendar">
-                            <h4>Calendar</h4>
-                            <div id="calendar_wrap" class="calendar_wrap">
-                                <table id="wp-calendar">
-                                    <caption>April 2017</caption>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" title="Monday">M</th>
-                                            <th scope="col" title="Tuesday">T</th>
-                                            <th scope="col" title="Wednesday">W</th>
-                                            <th scope="col" title="Thursday">T</th>
-                                            <th scope="col" title="Friday">F</th>
-                                            <th scope="col" title="Saturday">S</th>
-                                            <th scope="col" title="Sunday">S</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="3" id="prev"><a href="http://stargym.like-themes.com/2017/03/">« Mar</a></td>
-                                            <td class="pad">&nbsp;</td>
-                                            <td colspan="3" id="next" class="pad">&nbsp;</td>
-                                        </tr>
-                                    </tfoot>
-
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="5" class="pad">&nbsp;</td><td>1</td><td>2</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td><td id="today">4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
-                                        </tr>
-                                        <tr>
-                                            <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
-                                        </tr>
-                                        <tr>
-                                            <td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </aside>
-
-                        <aside class="widget">
-                            <h4>Search</h4>
-                            <div class="content">
-                                <form class="form wp-searchform" method="get">
-                                    <input type="text" name="search" value="" placeholder="Search for...">
-                                    <button type="submit" class="fa fa-search"></button>
-                                </form>
-                            </div>
-                        </aside>
-
-                        <aside class="widget">
-                            <h4>Instagram</h4>
-                            <div class="content">
-                                <div class="gallery-small row">
-                                    <a href="#" class="swipebox col-lg-4 col-md-4 col-sm-6 col-xs-6"><img src="assets/images/_insta-1.jpg" class="full-width" alt="Gallery"></a>
-                                    <a href="#" class="swipebox col-lg-4 col-md-4 col-sm-6 col-xs-6"><img src="assets/images/_insta-2.jpg" class="full-width" alt="Gallery"></a>
-                                    <a href="#" class="swipebox col-lg-4 col-md-4 col-sm-6 col-xs-6"><img src="assets/images/_insta-3.jpg" class="full-width" alt="Gallery"></a>
-                                    <a href="#" class="swipebox col-lg-4 col-md-4 col-sm-6 col-xs-6"><img src="assets/images/_insta-4.jpg" class="full-width" alt="Gallery"></a>
-                                    <a href="#" class="swipebox col-lg-4 col-md-4 col-sm-6 col-xs-6"><img src="assets/images/_insta-5.jpg" class="full-width" alt="Gallery"></a>
-                                    <a href="#" class="swipebox col-lg-4 col-md-4 col-sm-6 col-xs-6"><img src="assets/images/_insta-6.jpg" class="full-width" alt="Gallery"></a>
-                                </div>
-                            </div>
-                        </aside>
-
-                        <aside class="widget">
-                            <h4>Archives</h4>
-                            <ul>					
-                                <li><a href="#">March 2017</a></li>
-                                <li><a href="#">February 2017</a></li>
-                                <li><a href="#">January 2017</a></li>
-                            </ul>
-                        </aside>
                     </div>
                 </div>
             </div>
@@ -344,6 +262,5 @@
             ga('create', 'UA-91006724-1', 'auto');
             ga('send', 'pageview');
         </script>
-
     </body>
 </html>	
