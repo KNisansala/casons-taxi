@@ -46,7 +46,56 @@
 h4:hover{
     color: #FFC61A;
 }
-
+.vehicles{
+    text-align: center;
+    border: 1px solid #FFC61A;
+    margin-bottom: 20px;
+    background: #ffff;
+}
+.vehicles1{
+    text-align: center;
+    border: 1px solid #FFC61A;
+    background: #ffff;
+}
+.price1{
+    font-size: 25px;
+    font-weight: 700;
+}
+#tariffs .slider-inner .swiper-pagination {
+    margin-bottom: -15px;
+}
+#tariffs .arrows {
+  text-align: center;
+  margin-top: 40px;
+}
+#tariffs .arrow-left,
+#tariffs .arrow-right {
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  transition: background .4s ease;
+  background: #FFC61A;
+  color: #fff;
+  margin: 0 1px;
+  padding: 7px 12px;
+  font-size: 18px;
+}
+#tariffs .arrow-left.swiper-button-disabled,
+#tariffs .arrow-right.swiper-button-disabled {
+  background: #CCCCCC;
+  cursor: default;
+}
+#tariffs .arrow-left:not(.swiper-button-disabled):hover,
+#tariffs .arrow-right:not(.swiper-button-disabled):hover {
+  background: #1F1F1F;
+  color: #fff;
+}
+.widget .item:hover{
+    -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.30);
+}
 @media (max-width: 767px) {
 
     .hidden-xs {

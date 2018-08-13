@@ -63,6 +63,7 @@
                             <div class="image"><img src="assets/images/_tariff-1.png" alt="Tariff"></div>
                             <h4>Standart</h4>
                             <p>Standard sedan for a drive around the city at your service</p>
+                            <div class="price">$2<span>/km</span></div>
                             <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
                         </div>
                     </div>
@@ -71,14 +72,16 @@
                             <div class="image"><img src="assets/images/_tariff-2.png" alt="Tariff"></div>
                             <h4>Business</h4>
                             <p>Standard sedan for a drive around the city at your service</p>
+                            <div class="price">$2<span>/km</span></div>
                             <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight vip">
+                        <div class="item matchHeight">
                             <div class="image"><img src="assets/images/_tariff-3.png" alt="Tariff"></div>
                             <h4 class="red">Vip</h4>
                             <p>Standard sedan for a drive around the city at your service</p>
+                            <div class="price">$2<span>/km</span></div>
                             <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
                         </div>
                     </div>
@@ -87,6 +90,7 @@
                             <div class="image"><img src="assets/images/_tariff-4.png" alt="Tariff"></div>
                             <h4>Bus-minivan</h4>
                             <p>Standard sedan for a drive around the city at your service</p>
+                            <div class="price">$2<span>/km</span></div>
                             <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
                         </div>
                     </div>
@@ -98,6 +102,7 @@
                             <div class="image"><img src="assets/images/_tariff-1.png" alt="Tariff"></div>
                             <h4>Standart</h4>
                             <p>Standard sedan for a drive around the city at your service</p>
+                            <div class="price">$2<span>/km</span></div>
                             <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
                         </div>
                     </div>
@@ -106,14 +111,16 @@
                             <div class="image"><img src="assets/images/_tariff-2.png" alt="Tariff"></div>
                             <h4>Business</h4>
                             <p>Standard sedan for a drive around the city at your service</p>
+                            <div class="price">$2<span>/km</span></div>
                             <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight vip">
+                        <div class="item matchHeight">
                             <div class="image"><img src="assets/images/_tariff-3.png" alt="Tariff"></div>
                             <h4 class="red">Vip</h4>
                             <p>Standard sedan for a drive around the city at your service</p>
+                            <div class="price">$2<span>/km</span></div>
                             <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
                         </div>
                     </div>
@@ -122,6 +129,7 @@
                             <div class="image"><img src="assets/images/_tariff-4.png" alt="Tariff"></div>
                             <h4>Bus-minivan</h4>
                             <p>Standard sedan for a drive around the city at your service</p>
+                            <div class="price">$2<span>/km</span></div>
                             <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
                         </div>
                     </div>

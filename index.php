@@ -73,38 +73,70 @@
                 <h4 class="yellow">See Our</h4>
                 <h2 class="h1">Vehicles</h2>
                 <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight">
-                            <div class="image"><img src="assets/images/_tariff-1.png" class="full-width" alt="Tariff"></div>
-                            <h4>Standart</h4>
-                            <p>Standard sedan for a drive around the city at your service</p>
-                            <div class="price">$2<span>/km</span></div>
+                    <div class="swiper-container row" id="vehicle-slider">
+                        <div class="swiper-wrapper">
+                            <div class="col-md-3 col-sm-6 swiper-slide">
+                                <div class="item matchHeight">
+                                    <div class="image"><img src="assets/images/_tariff-1.png" class="full-width" alt="Tariff"></div>
+                                    <h4>Standart</h4>
+                                    <p>Standard sedan for a drive around the city at your service</p>
+                                    <div class="price">$2<span>/km</span></div>
+                                    <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 swiper-slide">
+                                <div class="item matchHeight">
+                                    <div class="image"><img src="assets/images/_tariff-2.png" class="full-width" alt="Tariff"></div>
+                                    <h4>Business</h4>
+                                    <p>Standard sedan for a drive around the city at your service</p>
+                                    <div class="price">$2,7<span>/km</span></div>
+                                    <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 swiper-slide">
+                                <div class="item matchHeight vip">
+                                    <div class="image"><img src="assets/images/_tariff-3.png" class="full-width" alt="Tariff"></div>
+                                    <h4 class="red">Vip</h4>
+                                    <p>Standard sedan for a drive around the city at your service</p>
+                                    <div class="price">$5<span>/km</span></div>
+                                    <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 swiper-slide">
+                                <div class="item matchHeight">
+                                    <div class="image"><img src="assets/images/_tariff-4.png" class="full-width" alt="Tariff"></div>
+                                    <h4>Bus-minivan</h4>
+                                    <p>Standard sedan for a drive around the city at your service</p>
+                                    <div class="price">$4,5<span>/km</span></div>
+                                    <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 swiper-slide">
+                                <div class="item matchHeight">
+                                    <div class="image"><img src="assets/images/_tariff-4.png" class="full-width" alt="Tariff"></div>
+                                    <h4>Bus-minivan</h4>
+                                    <p>Standard sedan for a drive around the city at your service</p>
+                                    <div class="price">$4,5<span>/km</span></div>
+                                    <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 swiper-slide">
+                                <div class="item matchHeight">
+                                    <div class="image"><img src="assets/images/_tariff-2.png" class="full-width" alt="Tariff"></div>
+                                    <h4>Business</h4>
+                                    <p>Standard sedan for a drive around the city at your service</p>
+                                    <div class="price">$2,7<span>/km</span></div>
+                                    <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                                </div>
+                            </div>
                         </div>
+                        <div class="arrows">
+                            <a href="#" class="arrow-left fa fa-caret-left"></a>
+                            <a href="#" class="arrow-right fa fa-caret-right"></a>
+                        </div>				
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight">
-                            <div class="image"><img src="assets/images/_tariff-2.png" class="full-width" alt="Tariff"></div>
-                            <h4>Business</h4>
-                            <p>Standard sedan for a drive around the city at your service</p>
-                            <div class="price">$2,7<span>/km</span></div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight vip">
-                            <div class="image"><img src="assets/images/_tariff-3.png" class="full-width" alt="Tariff"></div>
-                            <h4 class="red">Vip</h4>
-                            <p>Standard sedan for a drive around the city at your service</p>
-                            <div class="price">$5<span>/km</span></div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight">
-                            <div class="image"><img src="assets/images/_tariff-4.png" class="full-width" alt="Tariff"></div>
-                            <h4>Bus-minivan</h4>
-                            <p>Standard sedan for a drive around the city at your service</p>
-                            <div class="price">$4,5<span>/km</span></div>
-                        </div>
-                    </div>												
+
+
                 </div>
             </div>
         </section>
