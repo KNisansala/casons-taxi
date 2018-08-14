@@ -1,3 +1,10 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$PHOTO_ALBUM = new PhotoAlbum(Null);
+$photo_albums = $PHOTO_ALBUM->all();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -58,163 +65,20 @@
         <div class="inner gallery-page gallery-4">
             <div class="container">
                 <div class="row">
-                    
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
-                        <div class="item matchHeight">
-                            <a href="assets/images/_gallery-1.jpg" class="photo" data-fancybox="images">
-                                <img src="assets/images/_gallery-1.jpg" class="full-width rounded" alt="Gallery"></a>
-                            <div class="descr">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5></h5>
-                                    </div>
-                                </div>
+
+                    <?php
+                    foreach ($photo_albums as $photo_album) {
+                        ?>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
+                            <div class="item matchHeight">
+                                <a href="upload/photo-album/<?php echo $photo_album['image_name'] ?>" class="photo" data-fancybox="images">
+                                    <img src="upload/photo-album/<?php echo $photo_album['image_name'] ?>" class="full-width rounded" alt="Gallery"></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
-                        <div class="item matchHeight">
-                            <a href="assets/images/_gallery-2.jpg" class="photo" data-fancybox="images">
-                                <img src="assets/images/_gallery-2.jpg" class="full-width rounded" alt="Gallery"></a>
-                            <div class="descr">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
-                        <div class="item matchHeight">
-                            <a href="assets/images/_gallery-3.jpg" class="photo" data-fancybox="images">
-                                <img src="assets/images/_gallery-3.jpg" class="full-width rounded" alt="Gallery"></a>
-                            <div class="descr">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
-                        <div class="item matchHeight">
-                            <a href="assets/images/_gallery-4.jpg" class="photo" data-fancybox="images">
-                                <img src="assets/images/_gallery-4.jpg" class="full-width rounded" alt="Gallery"></a>
-                            <div class="descr">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
-                        <div class="item matchHeight">
-                            <a href="assets/images/_gallery-5.jpg" class="photo" data-fancybox="images">
-                                <img src="assets/images/_gallery-5.jpg" class="full-width rounded" alt="Gallery"></a>
-                            <div class="descr">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
-                        <div class="item matchHeight">
-                            <a href="assets/images/_gallery-6.jpg" class="photo" data-fancybox="images">
-                                <img src="assets/images/_gallery-6.jpg" class="full-width rounded" alt="Gallery"></a>
-                            <div class="descr">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
-                        <div class="item matchHeight">
-                            <a href="assets/images/_gallery-5.jpg" class="photo" data-fancybox="images">
-                                <img src="assets/images/_gallery-5.jpg" class="full-width rounded" alt="Gallery"></a>
-                            <div class="descr">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
-                        <div class="item matchHeight">
-                            <a href="assets/images/_gallery-6.jpg" class="photo" data-fancybox="images">
-                                <img src="assets/images/_gallery-6.jpg" class="full-width rounded" alt="Gallery"></a>
-                            <div class="descr">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
-                        <div class="item matchHeight">
-                            <a href="assets/images/_gallery-1.jpg" class="photo" data-fancybox="images">
-                                <img src="assets/images/_gallery-1.jpg" class="full-width rounded" alt="Gallery"></a>
-                            <div class="descr">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
-                        <div class="item matchHeight">
-                            <a href="assets/images/_gallery-2.jpg" class="photo" data-fancybox="images">
-                                <img src="assets/images/_gallery-2.jpg" class="full-width rounded" alt="Gallery"></a>
-                            <div class="descr">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
-                        <div class="item matchHeight">
-                            <a href="assets/images/_gallery-3.jpg" class="photo" data-fancybox="images">
-                                <img src="assets/images/_gallery-3.jpg" class="full-width rounded" alt="Gallery"></a>
-                            <div class="descr">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-ms-6">
-                        <div class="item matchHeight">
-                            <a href="assets/images/_gallery-4.jpg" class="photo" data-fancybox="images">
-                                <img src="assets/images/_gallery-4.jpg" class="full-width rounded" alt="Gallery"></a>
-                            <div class="descr">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                        <?php
+                    }
+                    ?>
                 </div>
                 <div class="paging-navigation">
                     <hr>
@@ -229,8 +93,8 @@
                 </div>				
             </div>
         </div>
-        
-        
+
+
         <!-- Footer -->
         <?php
         include 'footer.php';
