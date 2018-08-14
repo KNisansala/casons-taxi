@@ -1,3 +1,18 @@
+
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$id = '';
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
+
+$OFFER = new Offer($id);
+
+$offers = $OFFER->all();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -48,7 +63,7 @@
                         <span>View Offers</span>
                     </li>		
                 </ol>		
-                <h1>View Offers</h1>
+                <h1><?php echo $OFFER->title; ?></h1>
             </div>
         </header>
 
@@ -60,9 +75,15 @@
                         <div class="">
                             <div class="slider-inner swiper-container">
                                 <div class="swiper-wrapper">
-                                    <img src="assets/images/_homepage-3-2-bg.jpg" class="full-width swiper-slide" alt="Slider">
-                                    <img src="assets/images/_homepage-1-bg.jpg" class="full-width swiper-slide" alt="Slider">
-                                    <img src="assets/images/_homepage-3-bg.jpg" class="full-width swiper-slide" alt="Slider">
+
+                                    <?php
+                                    $photos = OfferPhoto::getOfferPhotosById($OFFER->id);
+                                    foreach ($photos as $photo) {
+                                        ?>
+                                        <img src="upload/offer/gallery/<?php echo $photo['image_name']; ?>" class="full-width swiper-slide" alt="Slider">
+                                        <?php
+                                    }
+                                    ?>
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -71,12 +92,12 @@
                         <div class="blog-info">
                             <div class="row">
                                 <div class="col-lg-6 col-sm-12  col-xs-6">
-                                    <h4>How often is a taxi used</h4>
+                                    <h4><?php echo $OFFER->title; ?></h4>
                                 </div>
                             </div>
                         </div>	
 
-                        <p><strong>Bold text</strong> maecenas mauris felis, pharetra ac odio a, interdum ultricies risus. Nunc tempor nunc at odio fermentum ullamcorper. Sed tincidunt ut tortor quis placerat. Curabitur <a href="#">link style</a> tristique imperdiet mollis. Sed rutrum id tellus et ultricies. Aliquam maximus sit amet justo vitae volutpat. Ut scelerisque diam vitae ante rhoncus vulputate. Curabitur laoreet eleifend tortor. Mauris sit amet facilisis nunc. Quisque id fermentum leo, eget tincidunt augue. Donec viverra sed ante eget condimentum.</p>
+                        <p><?php echo $OFFER->description; ?></p>
 
                         <hr>
                     </div>
@@ -118,54 +139,30 @@
                     <div class="widget-area" role="complementary">
                         <aside class="widget">
                             <div class="row">
-                                <div class="item matchHeight offers">
-                                    <div class="image">
-                                        <img src="assets/images/_gallery-1.jpg" class="full-width rounded" alt="Blog">
-                                    </div>
-                                    <div class="description">
-                                        <a href="view-offers.php" class="header">
-                                            <h5 class="offers-h5">How often is a taxi used</h5>
-                                        </a>
-                                        <p class="text">
-                                            Etiam maximus, tortor et commodo tincidunt, metus arcu porta libero, at dapibus nisl diam non est. Curabitur nunc urna, pulvinar in viverra sed. 									</p>
-                                        <a href="view-offers.php" class="btn btn-yellow">read more</a>
-                                    </div>
-                                </div>
-                                <div class="item matchHeight offers">
-                                    <div class="image">
-                                        <img src="assets/images/_gallery-2.jpg" class="full-width rounded" alt="Blog">
-                                    </div>							
-                                    <div class="description">
-                                        <a href="view-offers.php" class="header">
-                                            <h5 class="offers-h5">Taxi for business</h5>
-                                        </a>
-                                        <p class="text">
-                                            Nam rhoncus egestas mi, a rutrum orci rutrum sit amet. Nulla id tempor odio. Vestibulum tempus mattis gravida. Maecenas non nisl quam.									</p>
-                                        <a href="view-offers.php" class="btn btn-yellow">read more</a>
-                                    </div>
-                                </div>
-                                <div class="item matchHeight offers1">
-                                    <div class="image">
-                                        <img src="assets/images/_gallery-3.jpg" class="full-width rounded" alt="Blog">
-                                    </div>								
-                                    <div class="description">
-                                        <a href="view-offers.php" class="header">
-                                            <h5 class="offers-h5">The best ways to pay a taxi</h5>
-                                        </a>
-                                        <p class="text">
-                                            Aliquam eu consectetur libero. Aliquam nec auctor justo. Vestibulum sodales nunc vel bibendum consequat.Maecenas non nisl quam.									</p>
-                                        <a href="view-offers.php" class="btn btn-yellow">read more</a>
-                                    </div>
-                                </div>
-<!--                                <div class="item matchHeight vehicles1">
-                                    <div class="image"><img src="assets/images/_gallery-4.jpg" class="full-width rounded" alt="Blog"></div>								
-                                    <div class="description">
-                                        <a href="view-offers.php" class="header"><h5>How often is a taxi used</h5></a>
-                                        <p class="text">
-                                            Etiam maximus, tortor et commodo tincidunt, metus arcu porta libero, at dapibus nisl diam non est. Curabitur nunc urna, pulvinar in viverra sed. 									</p>
-                                        <a href="view-offers.php" class="btn btn-yellow">read more</a>
-                                    </div>
-                                </div>-->
+
+                                <?php
+                                foreach ($offers as $key => $offer) {
+                                    if ($key < 3) {
+                                        ?>
+
+                                        <div class="item matchHeight offers">
+                                            <div class="image">
+                                                <img src="upload/offer/<?php echo $offer['image_name'] ?>" class="full-width rounded" alt="Blog">
+                                            </div>
+                                            <div class="description">
+                                                <a href="#" class="header">
+                                                    <h5 class="offers-h5"><?php echo $offer['title']; ?></h5>
+                                                </a>
+                                                <p class="text p-padding">
+                                                    <?php echo $offer['short_description']; ?> 									</p>
+                                                <a href="view-offers.php?id=<?php echo $offer["id"]; ?>" class="btn btn-yellow">read more</a>
+                                            </div>
+                                        </div>
+
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </div>
                         </aside>
 
