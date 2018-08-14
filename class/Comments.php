@@ -15,7 +15,7 @@ class Comments {
 
     public $id;
     public $name;
-    public $title;
+    public $country;
     public $image_name;
     public $comment;
     public $is_active;
@@ -24,7 +24,7 @@ class Comments {
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`name`,`title`,`image_name`,`comment`,`is_active`,`queue` FROM `comments` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`name`,`country`,`image_name`,`comment`,`is_active`,`queue` FROM `comments` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -32,7 +32,7 @@ class Comments {
 
             $this->id = $result['id'];
             $this->name = $result['name'];
-            $this->title = $result['title'];
+            $this->country = $result['country'];
             $this->image_name = $result['image_name'];
             $this->comment = $result['comment'];
             $this->is_active = $result['is_active'];
@@ -44,9 +44,9 @@ class Comments {
 
     public function create() {
 
-        $query = "INSERT INTO `comments` (`name`,`title`,`image_name`,`comment`,`is_active`,`queue`) VALUES  ('"
+        $query = "INSERT INTO `comments` (`name`,`country`,`image_name`,`comment`,`is_active`,`queue`) VALUES  ('"
                 . $this->name . "','"
-                . $this->title . "','"
+                . $this->country . "','"
                 . $this->image_name . "', '"
                 . $this->comment . "', '"
                 . $this->is_active . "', '"
@@ -83,7 +83,7 @@ class Comments {
 
         $query = "UPDATE  `comments` SET "
                 . "`name` ='" . $this->name . "', "
-                . "`title` ='" . $this->title . "', "
+                . "`country` ='" . $this->country . "', "
                 . "`image_name` ='" . $this->image_name . "', "
                 . "`comment` ='" . $this->comment . "', "
                 . "`is_active` ='" . $this->is_active . "', "

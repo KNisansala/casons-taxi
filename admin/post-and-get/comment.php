@@ -8,7 +8,7 @@ if (isset($_POST['create'])) {
     $VALID = new Validator();
 
     $COMMENT->name = mysql_real_escape_string($_POST['name']);
-    $COMMENT->title = mysql_real_escape_string($_POST['title']);
+    $COMMENT->country = mysql_real_escape_string($_POST['country']);
     $COMMENT->comment = mysql_real_escape_string($_POST['comment']);
     $COMMENT->is_active = mysql_real_escape_string($_POST['active']);
 
@@ -38,7 +38,7 @@ if (isset($_POST['create'])) {
 
     $VALID->check($COMMENT, [
         'name' => ['required' => TRUE],
-        'title' => ['required' => TRUE],
+        'country' => ['required' => TRUE],
         'comment' => ['required' => TRUE]
     ]);
 
@@ -95,7 +95,7 @@ if (isset($_POST['update'])) {
 
     $COMMENT->image_name = $_POST['oldImageName'];
     $COMMENT->name = mysql_real_escape_string($_POST['name']);
-    $COMMENT->title = mysql_real_escape_string($_POST['title']);
+    $COMMENT->country = mysql_real_escape_string($_POST['country']);
     $COMMENT->comment = mysql_real_escape_string($_POST['comment']);
     $COMMENT->is_active = mysql_real_escape_string($_POST['active']);
 
@@ -103,7 +103,7 @@ if (isset($_POST['update'])) {
     $VALID->check($COMMENT, [
         'image_name' => ['required' => TRUE],
         'name' => ['required' => TRUE],
-        'title' => ['required' => TRUE],
+        'country' => ['required' => TRUE],
         'comment' => ['required' => TRUE],
      
     ]);

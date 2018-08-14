@@ -194,78 +194,27 @@ $vehicles = $VEHICLE->all();
 
                 <div class="swiper-container row" id="testimonials-slider">
                     <div class="swiper-wrapper">
-                        <div class="col-md-4 col-sm-6 swiper-slide">
-                            <div class="inner matchHeight">
-                                <div class="text">
-                                    <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.</p>
-                                </div>
-                                <div class="quote">
-                                    <span class="fa fa-quote-left"></span>
-                                    <div class="name">Anastasia Stone</div>
-                                    <img src="assets/images/_client-1.jpg" alt="Client">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 swiper-slide">
-                            <div class="inner matchHeight">
-                                <div class="text">
-                                    <p>Suspendisse nec arcu sed nibh lacinia pretium. Phasellus eros ligula, mattis id rutrum non, eleifend vitae lacus. </p>
-                                </div>				
-                                <div class="quote">		
-                                    <span class="fa fa-quote-left"></span>
-                                    <div class="name">Steven Rashford</div>
-                                    <img src="assets/images/_client-4.jpg" alt="Client">
+                        <?php
+                        $comments = Comments::all() ;
+                        foreach ($comments as $comment) {
+                            ?>
+                            <div class="col-md-4 col-sm-6 swiper-slide">
+                                <div class="inner matchHeight">
+                                    <div class="text">
+                                        <p><?php echo $comment['comment']; ?></p>
+                                    </div>
+                                    <div class="quote">
+                                        <span class="fa fa-quote-left"></span>
+                                        <div class="name"><?php echo $comment['name']; ?></div>
+                                        <div class="country"><?php echo $comment['country']; ?></div>
+                                        <img src="upload/comments/<?php echo $comment['image_name']; ?>" alt="Client">
+                                    </div>
                                 </div>
                             </div>
-                        </div>	
-                        <div class="col-md-4 col-sm-6 swiper-slide">
-                            <div class="inner matchHeight">
-                                <div class="text">
-                                    <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris. </p>
-                                </div>			
-                                <div class="quote">			
-                                    <span class="fa fa-quote-left"></span>
-                                    <div class="name">Patrick James</div>
-                                    <img src="assets/images/_client-5.jpg" alt="Client">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 swiper-slide">
-                            <div class="inner matchHeight">
-                                <div class="text">
-                                    <p>Nullam orci dui, dictum et magna sollicitudin, tempor blandit erat. Maecenas suscipit tellus sit amet augue placerat fringilla a id lacus. Fusce tincidunt in leo lacinia condimentum.</p>
-                                </div>
-                                <div class="quote">
-                                    <span class="fa fa-quote-left"></span>
-                                    <div class="name">Anastasia Stone</div>
-                                    <img src="assets/images/_client-1.jpg" alt="Client">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 swiper-slide">
-                            <div class="inner matchHeight">
-                                <div class="text">
-                                    <p>Suspendisse nec arcu sed nibh lacinia pretium. Phasellus eros ligula, mattis id rutrum non, eleifend vitae lacus. </p>
-                                </div>				
-                                <div class="quote">		
-                                    <span class="fa fa-quote-left"></span>
-                                    <div class="name">Steven Rashford</div>
-                                    <img src="assets/images/_client-4.jpg" alt="Client">
-                                </div>
-                            </div>
-                        </div>	
-                        <div class="col-md-4 col-sm-6 swiper-slide">
-                            <div class="inner matchHeight">
-                                <div class="text">
-                                    <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur dapibus pulvinar, sapien eros sodales ante, euismod aliquet nulla metus a mauris. </p>
-                                </div>			
-                                <div class="quote">			
-                                    <span class="fa fa-quote-left"></span>
-                                    <div class="name">Patrick James</div>
-                                    <img src="assets/images/_client-5.jpg" alt="Client">
-                                </div>
-                            </div>
-                        </div>					
+
+                            <?php
+                        }
+                        ?>				
                     </div>
                     <div class="arrows">
                         <a href="#" class="arrow-left fa fa-caret-left"></a>

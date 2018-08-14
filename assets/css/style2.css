@@ -4160,3 +4160,13 @@ img.aligncenter {
   bottom: 0;
   z-index: 1;
 }
+#testimonials .inner .quote .name, #testimonials-list .inner .quote .name {
+    margin-bottom: 0px;
+}
+#testimonials .inner .quote .country, #testimonials-list .inner .quote .country {
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
