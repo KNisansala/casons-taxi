@@ -61,67 +61,67 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="item matchHeight">
-                                    <a href="post.html" class="photo"><img src="assets/images/_gallery-1.jpg" class="full-width rounded" alt="Blog"></a>								
+                                    <a href="" class="photo"><img src="assets/images/_gallery-1.jpg" class="full-width rounded" alt="Blog"></a>								
                                     <div class="description">
-                                        <a href="post.html" class="header"><h5>How often is a taxi used</h5></a>
+                                        <a href="view-offers.php" class="header"><h5>How often is a taxi used</h5></a>
                                         <p class="text">
                                             Etiam maximus, tortor et commodo tincidunt, metus arcu porta libero, at dapibus nisl diam non est. Curabitur nunc urna, pulvinar in viverra sed. 									</p>
-                                        <a href="post.html" class="btn btn-yellow">read more</a>
+                                        <a href="view-offers.php" class="btn btn-yellow">read more</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="item matchHeight">
-                                    <a href="post.html" class="photo"><img src="assets/images/_gallery-2.jpg" class="full-width rounded" alt="Blog"></a>								
+                                    <a href="" class="photo"><img src="assets/images/_gallery-2.jpg" class="full-width rounded" alt="Blog"></a>								
                                     <div class="description">
-                                        <a href="post.html" class="header"><h5>Taxi for business</h5></a>
+                                        <a href="view-offers.php" class="header"><h5>Taxi for business</h5></a>
                                         <p class="text">
                                             Nam rhoncus egestas mi, a rutrum orci rutrum sit amet. Nulla id tempor odio. Vestibulum tempus mattis gravida. Maecenas non nisl quam.									</p>
-                                        <a href="post.html" class="btn btn-yellow">read more</a>
+                                        <a href="view-offers.php" class="btn btn-yellow">read more</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="item matchHeight">
-                                    <a href="post.html" class="photo"><img src="assets/images/_gallery-3.jpg" class="full-width rounded" alt="Blog"></a>								
+                                    <a href="" class="photo"><img src="assets/images/_gallery-3.jpg" class="full-width rounded" alt="Blog"></a>								
                                     <div class="description">
-                                        <a href="post.html" class="header"><h5>The best ways to pay a taxi</h5></a>
+                                        <a href="view-offers.php" class="header"><h5>The best ways to pay a taxi</h5></a>
                                         <p class="text">
                                             Aliquam eu consectetur libero. Aliquam nec auctor justo. Vestibulum sodales nunc vel bibendum consequat.									</p>
-                                        <a href="post.html" class="btn btn-yellow">read more</a>
+                                        <a href="view-offers.php" class="btn btn-yellow">read more</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="item matchHeight">
-                                    <a href="post.html" class="photo"><img src="assets/images/_gallery-4.jpg" class="full-width rounded" alt="Blog"></a>								
+                                    <a href="" class="photo"><img src="assets/images/_gallery-4.jpg" class="full-width rounded" alt="Blog"></a>								
                                     <div class="description">
-                                        <a href="post.html" class="header"><h5>How often is a taxi used</h5></a>
+                                        <a href="view-offers.php" class="header"><h5>How often is a taxi used</h5></a>
                                         <p class="text">
                                             Etiam maximus, tortor et commodo tincidunt, metus arcu porta libero, at dapibus nisl diam non est. Curabitur nunc urna, pulvinar in viverra sed. 									</p>
-                                        <a href="post.html" class="btn btn-yellow">read more</a>
+                                        <a href="view-offers.php" class="btn btn-yellow">read more</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="item matchHeight">
-                                    <a href="post.html" class="photo"><img src="assets/images/_gallery-5.jpg" class="full-width rounded" alt="Blog"></a>								
+                                    <a href="" class="photo"><img src="assets/images/_gallery-5.jpg" class="full-width rounded" alt="Blog"></a>								
                                     <div class="description">
-                                        <a href="post.html" class="header"><h5>Taxi for business</h5></a>
+                                        <a href="view-offers.php" class="header"><h5>Taxi for business</h5></a>
                                         <p class="text">
                                             Nam rhoncus egestas mi, a rutrum orci rutrum sit amet. Nulla id tempor odio. Vestibulum tempus mattis gravida. Maecenas non nisl quam.									</p>
-                                        <a href="post.html" class="btn btn-yellow">read more</a>
+                                        <a href="view-offers.php" class="btn btn-yellow">read more</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="item matchHeight">
-                                    <a href="post.html" class="photo"><img src="assets/images/_gallery-6.jpg" class="full-width rounded" alt="Blog"></a>								
+                                    <a href="" class="photo"><img src="assets/images/_gallery-6.jpg" class="full-width rounded" alt="Blog"></a>								
                                     <div class="description">
-                                        <a href="post.html" class="header"><h5>The best ways to pay a taxi</h5></a>
+                                        <a href="view-offers.php" class="header"><h5>The best ways to pay a taxi</h5></a>
                                         <p class="text">
                                             Aliquam eu consectetur libero. Aliquam nec auctor justo. Vestibulum sodales nunc vel bibendum consequat.									</p>
-                                        <a href="post.html" class="btn btn-yellow">read more</a>
+                                        <a href="view-offers.php" class="btn btn-yellow">read more</a>
                                     </div>
                                 </div>
                             </div>
