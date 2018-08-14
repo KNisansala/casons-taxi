@@ -5,7 +5,7 @@ $id = '';
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
-$TOUR_PACKAGE = new TourPackage($id);
+$VEHICLE = new Vehicle($id);
 ?> 
 <!DOCTYPE html>
 
@@ -14,7 +14,7 @@ $TOUR_PACKAGE = new TourPackage($id);
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Tour Package Photo</title>
+        <title>Vehicle Photo</title>
         <!-- Favicon-->
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -43,17 +43,17 @@ $TOUR_PACKAGE = new TourPackage($id);
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2>Create Tour package Photos</h2>
+                                <h2>Create Vehicle Photos</h2>
                                 <ul class="header-dropdown">
                                     <li class="">
-                                        <a href="manage-tour-package-normal.php">
+                                        <a href="manage-vehicle.php">
                                             <i class="material-icons">list</i> 
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="body">
-                                <form class="form-horizontal"  method="post" action="post-and-get/tour-normal-photo.php" enctype="multipart/form-data"> 
+                                <form class="form-horizontal"  method="post" action="post-and-get/vehicle-photo.php" enctype="multipart/form-data"> 
                                    
                                     <div class="col-md-12">                                       
                                         <div class="form-group form-float">
@@ -71,7 +71,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                                         </div>
                                     </div>
                                     <div class="col-md-12"> 
-                                          <input type="hidden" id="id" value="<?php echo $TOUR_PACKAGE->id; ?>" name="id"/>
+                                          <input type="hidden" id="id" value="<?php echo $VEHICLE->id; ?>" name="id"/>
                                         <input type="submit" name="create" class="btn btn-primary m-t-15 waves-effect" value="create"/>
                                     </div>
                                 </form>
@@ -80,20 +80,20 @@ $TOUR_PACKAGE = new TourPackage($id);
                                 <hr/>
                                 <div class="row clearfix">
                                     <?php
-                                    $TOUR_PACKAGE_PHOTO = TourPackagePhotosNormal::getTourPhotosById($id);
-                                    if (count($TOUR_PACKAGE_PHOTO) > 0) {
-                                        foreach ($TOUR_PACKAGE_PHOTO as $key => $tour_package_photo) {
+                                    $VEHICLE_PHOTO = VehiclePhoto::getVehiclePhotosById($id);
+                                    if (count($VEHICLE_PHOTO) > 0) {
+                                        foreach ($VEHICLE_PHOTO as $key => $vehicle_photo) {
                                             ?>
-                                            <div class="col-md-3" id="div<?php echo $tour_package_photo['id']; ?>">
+                                            <div class="col-md-3" id="div<?php echo $vehicle_photo['id']; ?>">
                                                 <div class="photo-img-container">
-                                                    <img src="../upload/tour-package/gallery/thumb/<?php echo $tour_package_photo['image_name']; ?>" class="img-responsive ">
+                                                    <img src="../upload/vehicle/gallery/thumb/<?php echo $vehicle_photo['image_name']; ?>" class="img-responsive ">
                                                 </div>
                                                 <div class="img-caption">
-                                                    <p class="maxlinetitle"><?php echo $tour_package_photo['caption']; ?></p>
+                                                    <p class="maxlinetitle"><?php echo $vehicle_photo['caption']; ?></p>
                                                     <div class="d">
-                                                        <a href="#" class="delete-tour-photo" data-id="<?php echo $tour_package_photo['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
-                                                        <a href="edit-tour-package-photos-normal.php?id=<?php echo $tour_package_photo['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
-                                                        <a href="arrange-tour-package-normal-photos.php?id=<?php echo $id; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
+                                                        <a href="#" class="delete-vehicle-photo" data-id="<?php echo $vehicle_photo['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
+                                                        <a href="edit-vehicle-photo.php?id=<?php echo $vehicle_photo['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
+                                                        <a href="arrange-vehicle-photo.php?id=<?php echo $id; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -130,7 +130,7 @@ $TOUR_PACKAGE = new TourPackage($id);
         <script src="plugins/bootstrap-notify/bootstrap-notify.js"></script>
         <script src="js/pages/ui/dialogs.js"></script>
         <script src="js/demo.js"></script>
-        <script src="delete/js/tour-photo-normal.js" type="text/javascript"></script>
+        <script src="delete/js/vehicle-photo.js" type="text/javascript"></script>
 
         <script>
             tinymce.init({

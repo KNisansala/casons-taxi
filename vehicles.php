@@ -1,3 +1,11 @@
+<?php
+include_once(dirname(__FILE__) . '/class/include.php');
+
+$VEHICLE = new Vehicle(Null);
+$vehicles = $VEHICLE->all();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -31,7 +39,7 @@
         include './top-bar.php';
         ?>
         <!-- /Top Bar -->
-        
+
         <!-- Header -->
         <?php
         include 'header.php';
@@ -52,100 +60,79 @@
                 <h1>Vehicles</h1>
             </div>
         </header>
-        
+
         <section id="tariffs" class="dark-bg">
             <div class="container">
                 <h4 class="yellow">See Our</h4>
                 <h1 class="tariffs-black">Vehicles</h1>
                 <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight">
-                            <div class="image"><img src="assets/images/_tariff-1.png" alt="Tariff"></div>
-                            <h4>Standart</h4>
-                            <p>Standard sedan for a drive around the city at your service</p>
-                            <div class="price">$2<span>/km</span></div>
-                            <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+
+                    <?php
+                    foreach ($vehicles as $vehicle) {
+                        ?>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="item matchHeight">
+                                <div class="image"><img src="upload/vehicle/<?php echo $vehicle['image_name'] ?>" alt="Tariff"></div>
+                                <h4><?php echo $vehicle['title']; ?></h4>
+                                <p><?php echo $vehicle['short_description']; ?></p>
+                                <div class="price"><?php echo "$", $vehicle['price']; ?><span>/km</span></div>
+                                <a href="view-vehicles.php?id=<?php echo $vehicle["id"]; ?>" class="btn btn-yellow">read more</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight">
-                            <div class="image"><img src="assets/images/_tariff-2.png" alt="Tariff"></div>
-                            <h4>Business</h4>
-                            <p>Standard sedan for a drive around the city at your service</p>
-                            <div class="price">$2<span>/km</span></div>
-                            <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight">
-                            <div class="image"><img src="assets/images/_tariff-3.png" alt="Tariff"></div>
-                            <h4 class="red">Vip</h4>
-                            <p>Standard sedan for a drive around the city at your service</p>
-                            <div class="price">$2<span>/km</span></div>
-                            <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight">
-                            <div class="image"><img src="assets/images/_tariff-4.png" alt="Tariff"></div>
-                            <h4>Bus-minivan</h4>
-                            <p>Standard sedan for a drive around the city at your service</p>
-                            <div class="price">$2<span>/km</span></div>
-                            <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
-                        </div>
-                    </div>
+                                        
+<!--                                        <div class="row margin-top">
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="item matchHeight">
+                                                    <div class="image"><img src="assets/images/_tariff-1.png" alt="Tariff"></div>
+                                                    <h4>Standart</h4>
+                                                    <p>Standard sedan for a drive around the city at your service</p>
+                                                    <div class="price">$2<span>/km</span></div>
+                                                    <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="item matchHeight">
+                                                    <div class="image"><img src="assets/images/_tariff-2.png" alt="Tariff"></div>
+                                                    <h4>Business</h4>
+                                                    <p>Standard sedan for a drive around the city at your service</p>
+                                                    <div class="price">$2<span>/km</span></div>
+                                                    <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="item matchHeight">
+                                                    <div class="image"><img src="assets/images/_tariff-3.png" alt="Tariff"></div>
+                                                    <h4 class="red">Vip</h4>
+                                                    <p>Standard sedan for a drive around the city at your service</p>
+                                                    <div class="price">$2<span>/km</span></div>
+                                                    <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="item matchHeight">
+                                                    <div class="image"><img src="assets/images/_tariff-4.png" alt="Tariff"></div>
+                                                    <h4>Bus-minivan</h4>
+                                                    <p>Standard sedan for a drive around the city at your service</p>
+                                                    <div class="price">$2<span>/km</span></div>
+                                                    <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
+                                                </div>
+                                            </div>
+                                        </div>-->
+
+                        <?php
+                    }
+                    ?>
                 </div>
-                
-                <div class="row margin-top">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight">
-                            <div class="image"><img src="assets/images/_tariff-1.png" alt="Tariff"></div>
-                            <h4>Standart</h4>
-                            <p>Standard sedan for a drive around the city at your service</p>
-                            <div class="price">$2<span>/km</span></div>
-                            <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight">
-                            <div class="image"><img src="assets/images/_tariff-2.png" alt="Tariff"></div>
-                            <h4>Business</h4>
-                            <p>Standard sedan for a drive around the city at your service</p>
-                            <div class="price">$2<span>/km</span></div>
-                            <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight">
-                            <div class="image"><img src="assets/images/_tariff-3.png" alt="Tariff"></div>
-                            <h4 class="red">Vip</h4>
-                            <p>Standard sedan for a drive around the city at your service</p>
-                            <div class="price">$2<span>/km</span></div>
-                            <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="item matchHeight">
-                            <div class="image"><img src="assets/images/_tariff-4.png" alt="Tariff"></div>
-                            <h4>Bus-minivan</h4>
-                            <p>Standard sedan for a drive around the city at your service</p>
-                            <div class="price">$2<span>/km</span></div>
-                            <a href="view-vehicles.php" class="btn btn-yellow">read more</a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-            </div>
         </section>
 
-        
+
         <!-- Footer -->
         <?php
         include 'footer.php';
         ?>
         <!-- /Footer -->
-        
+
 
         <script>var base_href = '/';</script>
         <script type="text/javascript" src="assets/js/jquery.min.js"></script>

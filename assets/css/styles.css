@@ -57,6 +57,7 @@ h4:hover{
     border: 1px solid #FFC61A;
     background: #ffff;
 }
+
 .offers{
     text-align: center;
     border: 1px solid #FFC61A;
@@ -114,6 +115,9 @@ h4:hover{
 }
 .widget .item:hover{
     -webkit-box-shadow: 0 0px 15px rgba(0, 0, 0, 0.30);
+}
+.widget .img{
+    width: 100%
 }
 @media (max-width: 767px) {
 

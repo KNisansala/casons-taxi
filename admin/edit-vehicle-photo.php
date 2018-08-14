@@ -6,7 +6,7 @@ $id = '';
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
-$TOUR_PACKAGE_PHOTO = new TourPackagePhotosNormal($id);
+$VEHICLE_PHOTO = new VehiclePhoto($id);
 ?> 
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ $TOUR_PACKAGE_PHOTO = new TourPackagePhotosNormal($id);
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Tour Package-Photo</title>
+        <title>Vehicle-Photo</title>
         <!-- Favicon-->
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -45,31 +45,31 @@ $TOUR_PACKAGE_PHOTO = new TourPackagePhotosNormal($id);
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    Edit Tour Package Photo
+                                    Edit Vehicle Photo
                                 </h2>
 
                             </div>
                             <div class="body">
-                                <form class="form-horizontal" method="post" action="post-and-get/tour-normal-photo.php" enctype="multipart/form-data"> 
+                                <form class="form-horizontal" method="post" action="post-and-get/vehicle-photo.php" enctype="multipart/form-data"> 
                                       <div class="col-md-12">                                       
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="file" id="image" class="form-control" value="<?php echo $TOUR_PACKAGE_PHOTO->image_name; ?>"  name="image">
-                                                <img src="../upload/tour-package/gallery/<?php echo $TOUR_PACKAGE_PHOTO->image_name; ?>" id="image" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
+                                                <input type="file" id="image" class="form-control" value="<?php echo $VEHICLE_PHOTO->image_name; ?>"  name="image">
+                                                <img src="../upload/vehicle/gallery/<?php echo $VEHICLE_PHOTO->image_name; ?>" id="image" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" id="caption" class="form-control"  value="<?php echo $TOUR_PACKAGE_PHOTO->caption; ?>"  name="caption"  required="TRUE">
+                                                <input type="text" id="caption" class="form-control"  value="<?php echo $VEHICLE_PHOTO->caption; ?>"  name="caption"  required="TRUE">
                                                 <label class="form-label">Caption</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12"> 
-                                        <input type="hidden" id="oldImageName" value="<?php echo $TOUR_PACKAGE_PHOTO->image_name; ?>" name="oldImageName"/>
-                                        <input type="hidden" id="id" value="<?php echo $TOUR_PACKAGE_PHOTO->id; ?>" name="id"/>
+                                        <input type="hidden" id="oldImageName" value="<?php echo $VEHICLE_PHOTO->image_name; ?>" name="oldImageName"/>
+                                        <input type="hidden" id="id" value="<?php echo $VEHICLE_PHOTO->id; ?>" name="id"/>
                                         <input type="hidden" id="authToken" value="<?php echo $_SESSION["authToken"]; ?>" name="authToken"/>
                                         <button type="submit" class="btn btn-primary m-t-15 waves-effect" name="update" value="update">Save Changes</button>
                                     </div>

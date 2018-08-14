@@ -7,7 +7,7 @@
  */
 
 /**
- * Description of Tour_package
+ * Description of Vehicles
  *
  * @author Suharshana DsW
  */
@@ -103,7 +103,7 @@ class Vehicle {
 
     public function delete() {
 
-        $this->deleteTourDates();
+        $this->deleteVehiclePhotos();
 
         unlink(Helper::getSitePath() . "upload/vehicle/" . $this->image_name);
 
@@ -114,50 +114,20 @@ class Vehicle {
         return $db->readQuery($query);
     }
 
-    public function deleteTourDates() {
+    public function deleteVehiclePhotos() {
 
-        $TOUR_DATE = new TourDate(NULL);
+        $VEHICLE_PHOTO = new VehiclePhoto(NULL);
 
-        $alldates = $TOUR_DATE->getTourDatesById($this->id);
-
-        foreach ($alldates as $date) {
-
-            $IMG = $TOUR_DATE->image_name = $date["image_name"];
-            unlink(Helper::getSitePath() . "upload/tour-package/date/" . $IMG);
-            unlink(Helper::getSitePath() . "upload/tour-package/date/thumb/" . $IMG);
-
-            $TOUR_DATE->id = $date["id"];
-            $TOUR_DATE->delete();
-        }
-    }
-
-    public function deleteNormal() {
-
-        $this->deleteNormalPhotos();
-
-        unlink(Helper::getSitePath() . "upload/tour-package/" . $this->image_name);
-
-        $query = 'DELETE FROM `vehicle` WHERE id="' . $this->id . '"';
-
-        $db = new Database();
-
-        return $db->readQuery($query);
-    }
-
-    public function deleteNormalPhotos() {
-
-        $TOUR_PACKAGE_PHOTO = new VehiclePhotosNormal(NULL);
-
-        $allPhotos = $TOUR_PACKAGE_PHOTO->getTourPhotosById($this->id);
+        $allPhotos = $VEHICLE_PHOTO->getVehiclePhotosById($this->id);
 
         foreach ($allPhotos as $photo) {
 
-            $IMG = $TOUR_PACKAGE_PHOTO->image_name = $photo["image_name"];
-            unlink(Helper::getSitePath() . "upload/tour-package/gallery/" . $IMG);
-            unlink(Helper::getSitePath() . "upload/tour-package/gallery/thumb/" . $IMG);
+            $IMG = $VEHICLE_PHOTO->image_name = $photo["image_name"];
+            unlink(Helper::getSitePath() . "upload/vehicle/gallery/" . $IMG);
+            unlink(Helper::getSitePath() . "upload/vehicle/gallery/thumb/" . $IMG);
 
-            $TOUR_PACKAGE_PHOTO->id = $photo["id"];
-            $TOUR_PACKAGE_PHOTO->delete();
+            $VEHICLE_PHOTO->id = $photo["id"];
+            $VEHICLE_PHOTO->delete();
         }
     }
 
