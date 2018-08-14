@@ -7,10 +7,10 @@ if (isset($_POST['create'])) {
     $VEHICLE = new Vehicle(NULL);
     $VALID = new Validator();
 
-    $VEHICLE->title = mysql_real_escape_string($_POST['title']);
-    $VEHICLE->price = mysql_real_escape_string($_POST['price']);
-    $VEHICLE->short_description = mysql_real_escape_string($_POST['short_description']);
-    $VEHICLE->description = mysql_real_escape_string($_POST['description']);
+    $VEHICLE->title = $_POST['title'];
+    $VEHICLE->price = $_POST['price'];
+    $VEHICLE->short_description = $_POST['short_description'];
+    $VEHICLE->description = $_POST['description'];
 
     $dir_dest = '../../upload/vehicle/';
 
@@ -22,7 +22,7 @@ if (isset($_POST['create'])) {
         $handle->image_resize = true;
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
-        $handle->file_new_name_body = Helper::randamId();
+        $handle->file_new_name_body ;
         $handle->image_x = 900;
         $handle->image_y = 500;
 
@@ -74,7 +74,7 @@ if (isset($_POST['create'])) {
 }
 
 if (isset($_POST['update'])) {
-    $dir_dest = '../../upload/tour-package/';
+    $dir_dest = '../../upload/vehicle/';
 
     $handle = new Upload($_FILES['image']);
 
