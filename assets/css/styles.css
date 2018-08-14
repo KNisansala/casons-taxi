@@ -57,6 +57,25 @@ h4:hover{
     border: 1px solid #FFC61A;
     background: #ffff;
 }
+.offers{
+    text-align: center;
+    border: 1px solid #FFC61A;
+    margin-bottom: 20px;
+    background: #ffff;
+    font-size: 14px;
+}
+.offers1{
+    text-align: center;
+    border: 1px solid #FFC61A;
+    background: #ffff;
+    font-size: 14px;
+}
+.offers-h5{
+    margin: 25px 0 15px;
+}
+.text.p{
+    font-size: 14px;
+}
 .price1{
     font-size: 25px;
     font-weight: 700;
