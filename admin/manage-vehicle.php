@@ -53,15 +53,15 @@ include_once(dirname(__FILE__) . '/auth.php');
                                                 ?>
                                                 <div class="col-md-3"  id="div<?php echo $vehicle['id']; ?>">
                                                     <div class="photo-img-container">
-                                                        <img src="../upload/tour-package/<?php echo $vehicle['image_name']; ?>" class="img-responsive ">
+                                                        <img src="../upload/vehicle/<?php echo $vehicle['image_name']; ?>" class="img-responsive ">
                                                     </div>
                                                     <div class="img-caption">
                                                         <p class="maxlinetitle"><?php echo $vehicle['title']; ?></p>
                                                         <div class="d">
                                                             <a href="#"  class="delete-tour-package" data-id="<?php echo $vehicle['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
-                                                            <a href="edit-tour-package.php?id=<?php echo $vehicle['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
-                                                            <a href="arrange-tour-package.php?id=<?php echo $vehicle['id']; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
-                                                            <a href="view-tour-date.php?id=<?php echo $vehicle['id']; ?>">  <button class="glyphicon glyphicon-time arrange-btn"></button></a>
+                                                            <a href="edit-vehicle.php?id=<?php echo $vehicle['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
+                                                            <a href="arrange-vehicle.php?id=<?php echo $vehicle['id']; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
+                                                            <a href="view-vehicle.php?id=<?php echo $vehicle['id']; ?>">  <button class="glyphicon glyphicon-time arrange-btn"></button></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -69,7 +69,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             }
                                         } else {
                                             ?> 
-                                            <b style="padding-left: 15px;">No packages in the database.</b> 
+                                            <b style="padding-left: 15px;">No vehicles in the database.</b> 
                                         <?php } ?> 
 
                                     </div>
