@@ -22,7 +22,7 @@ class VehiclePhoto {
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`vehicle`,`image_name`,`caption`,`queue` FROM `tour_photo_normal` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`vehicle`,`image_name`,`caption`,`queue` FROM `vehicle_photo` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -40,7 +40,7 @@ class VehiclePhoto {
 
     public function create() {
 
-        $query = "INSERT INTO `tour_photo_normal` (`vehicle`,`image_name`,`caption`,`queue`) VALUES  ('"
+        $query = "INSERT INTO `vehicle_photo` (`vehicle`,`image_name`,`caption`,`queue`) VALUES  ('"
                 . $this->vehicle . "','"
                 . $this->image_name . "', '"
                 . $this->caption . "', '"
@@ -61,7 +61,7 @@ class VehiclePhoto {
 
     public function all() {
 
-        $query = "SELECT * FROM `tour_photo_normal` ORDER BY queue ASC";
+        $query = "SELECT * FROM `vehicle_photo` ORDER BY queue ASC";
         $db = new Database();
         $result = $db->readQuery($query);
         $array_res = array();
@@ -75,7 +75,7 @@ class VehiclePhoto {
 
     public function update() {
 
-        $query = "UPDATE  `tour_photo_normal` SET "
+        $query = "UPDATE  `vehicle_photo` SET "
                 . "`vehicle` ='" . $this->vehicle . "', "
                 . "`image_name` ='" . $this->image_name . "', "
                 . "`caption` ='" . $this->caption . "', "
@@ -95,16 +95,16 @@ class VehiclePhoto {
 
     public function delete() {
 
-        $query = 'DELETE FROM `tour_photo_normal` WHERE id="' . $this->id . '"';
+        $query = 'DELETE FROM `vehicle_photo` WHERE id="' . $this->id . '"';
 
         $db = new Database();
 
         return $db->readQuery($query);
     }
 
-    public function getTourPhotosById($tour) {
+    public function getVehiclePhotosById($vehicle) {
 
-        $query = "SELECT * FROM `tour_photo_normal` WHERE `vehicle`= $tour ORDER BY queue ASC";
+        $query = "SELECT * FROM `vehicle_photo` WHERE `vehicle`= $vehicle ORDER BY queue ASC";
 
         $db = new Database();
 
@@ -118,7 +118,7 @@ class VehiclePhoto {
     }
 
     public function arrange($key, $img) {
-        $query = "UPDATE `tour_photo_normal` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
+        $query = "UPDATE `vehicle_photo` SET `queue` = '" . $key . "'  WHERE id = '" . $img . "'";
         $db = new Database();
         $result = $db->readQuery($query);
         return $result;

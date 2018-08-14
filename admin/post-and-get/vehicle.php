@@ -23,8 +23,8 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body ;
-        $handle->image_x = 900;
-        $handle->image_y = 500;
+        $handle->image_x = 220;
+        $handle->image_y = 150;
 
         $handle->Process($dir_dest);
 
@@ -54,7 +54,7 @@ if (isset($_POST['create'])) {
         $VALID->addError("Your data was saved successfully", 'success');
         $_SESSION['ERRORS'] = $VALID->errors();
 
-        header("location: ../view-tour-date.php?id=" . $VEHICLE->id);
+        header("location: ../view-vehicle-photos.php?id=" . $VEHICLE->id);
     } else {
 
         if (!isset($_SESSION)) {
@@ -87,8 +87,8 @@ if (isset($_POST['update'])) {
         $handle->file_new_name_ext = FALSE;
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $_POST ["oldImageName"];
-        $handle->image_x = 900;
-        $handle->image_y = 500;
+        $handle->image_x = 220;
+        $handle->image_y = 150;
 
         $handle->Process($dir_dest);
 

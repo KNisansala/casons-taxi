@@ -1760,6 +1760,7 @@ nav.navbar.affix {
   background-clip: padding-box;
   position: relative;
   transition: all .3s ease;
+  margin-bottom: 30px;
 }
 @media (max-width: 991px) {
   #tariffs .item {
@@ -2396,7 +2397,7 @@ footer .go-top:hover:before {
 */
 .widget-area {
   background: #F5F5F5;
-  padding: 34px 38px;
+  padding: 34px 34px;
   margin-top: 0px;
   -webkit-border-radius: 3px;
   -webkit-background-clip: padding-box;

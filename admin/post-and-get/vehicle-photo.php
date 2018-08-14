@@ -85,7 +85,7 @@ if (isset($_POST['create'])) {
 if (isset($_POST['update'])) {
 
     $dir_dest = '../../upload/vehicle/gallery/';
-    $dir_dest_thumb = '../../upload/vehiclegallery/thumb/';
+    $dir_dest_thumb = '../../upload/vehicle/gallery/thumb/';
 
     $handle = new Upload($_FILES['image']);
 

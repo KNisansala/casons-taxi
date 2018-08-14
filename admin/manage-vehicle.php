@@ -58,10 +58,10 @@ include_once(dirname(__FILE__) . '/auth.php');
                                                     <div class="img-caption">
                                                         <p class="maxlinetitle"><?php echo $vehicle['title']; ?></p>
                                                         <div class="d">
-                                                            <a href="#"  class="delete-tour-package" data-id="<?php echo $vehicle['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
+                                                            <a href="#"  class="delete-vehicle" data-id="<?php echo $vehicle['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
                                                             <a href="edit-vehicle.php?id=<?php echo $vehicle['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
                                                             <a href="arrange-vehicle.php?id=<?php echo $vehicle['id']; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
-                                                            <a href="view-vehicle.php?id=<?php echo $vehicle['id']; ?>">  <button class="glyphicon glyphicon-time arrange-btn"></button></a>
+                                                            <a href="view-vehicle-photos.php?id=<?php echo $vehicle['id']; ?>">  <button class="glyphicon glyphicon-picture arrange-btn"></button></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -106,7 +106,7 @@ include_once(dirname(__FILE__) . '/auth.php');
         <script src="plugins/bootstrap-notify/bootstrap-notify.js"></script>
         <script src="js/pages/ui/dialogs.js"></script>
         <script src="js/demo.js"></script>
-        <script src="delete/js/tour-package.js" type="text/javascript"></script>
+        <script src="delete/js/vehicle.js" type="text/javascript"></script>
 
     </body>
 
