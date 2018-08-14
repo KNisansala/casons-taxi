@@ -68,7 +68,7 @@ $COMMENT = new Comments($id);
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" id="title" class="form-control" placeholder="Enter title" autocomplete="off" name="title" value="<?php echo $COMMENT->title; ?>">
+                                                <input type="text" id="country" class="form-control" placeholder="Enter country" autocomplete="off" name="country" value="<?php echo $COMMENT->country; ?>">
                                                 <label class="form-label">Title</label>
                                             </div>
                                         </div>
