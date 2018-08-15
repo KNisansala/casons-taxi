@@ -64,7 +64,7 @@
                             <p>We are a well reputed and high professional, reliable taxi services and tours operators in Sri Lanka.  Our existing customers have proved it on their TripAdvisor feedbacks.</p>
                         </div>
                         <div class="col-md-6 t-opacity">
-                            <img src="assets/images/taxi_PNG16.png" alt=""/>
+                            <img src="assets/images/taxi_PNG16.png" class="img-responsive" alt=""/>
                         </div>
                     </div>
                 </div>

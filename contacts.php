@@ -87,7 +87,7 @@
                         <form class="form form-sm form-validate">
                             <h3 class="aligncenter">Send Message</h3>
                             <div class="form-group">
-                                <div class="col-md-6">
+                                <div class="col-md-6 input1">
                                     <label>Your Name <span class="red">*</span></label>
                                     <input type="text" id="txtName" name="txtName" placeholder="Your name" class="input-validater">
                                     <span id="spanName"></span>
@@ -146,8 +146,8 @@
             </div>
         </section>
 
-        <!-- Set google map coords and API key to yours -->
-        <div id="map" data-lat="40.7529789" data-lng="-74.0044417" data-zoom="11"></div>
+        <!--         Set google map coords and API key to yours -->
+        <div class=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.95096399553!2d79.8474502097176!3d6.921922576092082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1534247866652" width="2000" height="750" frameborder="0" style="border:0" allowfullscreen class="map"></iframe></div>
 
         <!-- Footer -->
         <?php
@@ -162,7 +162,7 @@
         <script type="text/javascript" src="assets/js/plugins.min.js"></script>		
 
         <script src="assets/js/map-style.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTRSHf8sjMCfK9PHPJxjJkwrCIo5asIzE"></script>	
+<!--        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTRSHf8sjMCfK9PHPJxjJkwrCIo5asIzE"></script>	-->
         <script type="text/javascript" src="assets/js/scripts.js"></script>
         <script src="contact-us-form/scripts.js" type="text/javascript"></script>
         <script>
