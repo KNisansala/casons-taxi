@@ -80,16 +80,6 @@ $photo_albums = $PHOTO_ALBUM->all();
                     }
                     ?>
                 </div>
-                <div class="paging-navigation">
-                    <hr>
-                    <div class="pagination">
-                        <a href="#" class="prev disabled"><span class="fa fa-caret-left"></span> prev</a>
-                        <a href="#" class="page-numbers current">1</a>
-                        <a href="#" class="page-numbers">2</a>
-                        <a href="#" class="page-numbers">3</a>
-                        <a href="#" class="page-numbers">4</a>					
-                        <a href="#" class="next">next <span class="fa fa-caret-right"></span></a>
-                    </div>
                 </div>				
             </div>
         </div>

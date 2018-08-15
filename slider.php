@@ -6,22 +6,22 @@
             <div class="row forms">
                 <div class="col-md-3">
                     <div class="form-group">
-                        <input type="text" value="" name="txtPickup" id="txtPickup" placeholder="Pickup Location" class="ajaxField required"><span class="fa fa-map-marker"></span>
+                        <input type="text" value="" name="txtPickup" id="txtPickup" placeholder="Pickup Location" class="ajaxField required" required><span class="fa fa-map-marker"></span>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <input type="text" value="" name="txtDrop" id="txtDrop" placeholder="Drop Location" class="ajaxField required"><span class="fa fa-map-marker"></span>
+                        <input type="text" value="" name="txtDrop" id="txtDrop" placeholder="Drop Location" class="ajaxField required" required><span class="fa fa-map-marker"></span>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <input type="text" value="" name="txtDate" id="datepicker1" placeholder="Date" class="ajaxField required"><span class="fa fa-calendar"></span>
+                        <input type="text" value="" name="txtDate" id="datepicker1" placeholder="Date" class="ajaxField required" required><span class="fa fa-calendar"></span>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <input type="text" value="" name="txtPassengers" id="txtPassengers" placeholder="No of Passengers" class="input-validater"><span class="fa fa-male"></span>
+                        <input type="text" value="" name="txtPassengers" id="txtPassengers" placeholder="No of Passengers" class="input-validater" required><span class="fa fa-male"></span>
                     </div>
                 </div>
             </div>

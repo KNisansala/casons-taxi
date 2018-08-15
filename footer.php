@@ -18,15 +18,17 @@
                         <div class="row">
                             <div class="col-md-5">
                                 <ul class="nav navbar-nav">
-                                    <li class="active"><a href="index.php">Home</a></li>
+                                    <li class=""><a href="index.php">Home</a></li>
+                                    <li class=""><a href="about-us.php">About Us</a></li>
                                     <li><a href="vehicles.php">Vehicles</a></li>
                                     <li><a href="services.php">Services</a></li>          
-                                    <li><a href="get-taxi.php">Get taxi</a></li>
+                                    
 
                                 </ul>						
                             </div>
                             <div class="col-md-5">
                                 <ul class="nav navbar-nav">
+                                    <li><a href="get-taxi.php">Get taxi</a></li>
                                     <li><a href="gallery.php">Gallery</a></li>
                                     <li><a href="special-offers.php">Special Offers</a></li>
                                     <li><a href="contacts.php">Contacts</a></li>
@@ -37,9 +39,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-ms-6">					
                         <h4>Contact us</h4>
-                        <p><span class="yellow">Address:</span> 43 2-nd Avenue,  New York, NY 29004-7153</p>
 
                         <ul class="address">
+                            <li><span class="fa fa-map-marker"></span>43 2-nd Avenue,  New York, NY 29004-7153</li>
                             <li><span class="fa fa-phone"></span>800-5-800</li>
                             <li><span class="fa fa-envelope"></span><a href="#">info@casonstaxi.lk</a></li>
                             <li><span class="fa fa-skype"></span>casonstaxi</li>
@@ -51,7 +53,7 @@
 
         <footer>
             <div class="container">
-                <a href="">CasonsTaxi</a> 2018 © All Rights Reserved
+                <a href="./">CasonsTaxi</a> 2018 © All Rights Reserved
                 <a href="#" class="go-top hidden-xs hidden-ms"></a>
             </div>
         </footer>
